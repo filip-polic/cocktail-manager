@@ -1,0 +1,57 @@
+{% extends 'cm_base.html.twig' %}
+
+{% block title %}Login{% endblock title %}
+
+{% block body %}
+    {% for message in app.flashes('success') %}
+        <div class="fixed-top w-100 alert-success alert-popup text-center p-3 bsh-light flex-center"
+             style="font-size:1.25rem;">
+            <span>{{ message|escape }}</span>
+        </div>
+        <script type="text/javascript" nonce="{{ csp_nonce() }}">
+            setTimeout(function () {
+                $('.alert-success').css('transform', 'translateY(-200px)');
+            }, 3500);
+        </script>
+    {% endfor %}
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center login-wrapper">
+            <div class="col-11 col-md-8 col-lg-5 text-center">
+                <h1 class="mb-5">Account login</h1>
+                {% if error %}
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <div class="alert alert-danger w-100">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    </div>
+                </div>
+                {% endif %}
+                <form action="{{ path('cm_login')|escape }}" method="POST" class="mb-2">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 p-0">
+                            <input type="text" id="username" name="_username" placeholder="Username" class="w-100">
+                        </div>
+                        <div class="col-12 col-sm-6 p-0">
+                            <input type="password" id="password" name="_password" placeholder="Password" class="w-100">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+                            <button type="submit" class="btn btn-darker w-100">
+                                Sign in
+                                <img src="{{ asset('assets/img/svg/cm_logo.svg')|escape }}"
+                                     alt="Cocktail Manager Logo" class="img-fluid ml-2" style="width: 1.25rem;">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="flex-center flex-column">
+                    <small class="text-white text-center d-block text-uppercase">
+                        Haven't signed up yet?
+                        Just <a class="text-darker" style="text-decoration: underline;" href="{{ path('cm_register')|escape }}">do</a> it.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

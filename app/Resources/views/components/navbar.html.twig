@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light px-sm-5">
+    <a class="navbar-brand flex-center" href="{{ path('cm_dashboard')|escape }}">
+        <img src="{{ asset('assets/img/svg/cm_logo.svg')|escape }}" alt="Cocktail Manager Logo" class="img-fluid mr-1" style="width: 1.25rem;">
+        <span class="text-uppercase font-weight-light">Cocktail</span>
+        <span class="text-uppercase font-weight-bold">Manager</span>
+    </a>
+    <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="{{ asset('assets/img/svg/menu.svg')|escape }}" alt="Hamburger menu icon" style="width: 1.5rem;">
+    </button>
+    <div class="collapse navbar-collapse justify-content-end my-3 my-lg-2" id="navbarNav">
+        <ul class="navbar-nav align-items-lg-center">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') and is_granted('ROLE_USER') %}
+                <div class="dropdown mx-lg-1">
+                    <button class="btn btn-darker dropdown-toggle rounded-0" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ app.user.username|escape }}
+                    </button>
+                    <div class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="{{ path('user_change_password', { 'id': app.user.id }) }}">Change password</a>
+                        <a class="dropdown-item bg-danger text-white" href="#">Delete account</a>
+                    </div>
+                </div>
+            {% endif %}
+            <li class="nav-item mx-lg-1 {% if app.request.get('_route') is same as('cm_dashboard') %}{{ 'active' }}{% endif %}">
+                <a class="nav-link" href="{{ path('cm_dashboard')|escape }}">Dashboard <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item mx-lg-1 {% if app.request.get('_route') is same as('cocktails_index') %}{{ 'active' }}{% endif %}">
+                <a class="nav-link" href="{{ path('cocktails_index')|escape }}">Cocktails</a>
+            </li>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') and is_granted('ROLE_USER') %}
+                <li class="nav-item mx-lg-1">
+                    <a class="btn btn-sm btn-success ml-4 ml-lg-0 rounded-0" href="{{ path('cocktail_create')|escape }}"
+                       id="create-cocktail">Create cocktail</a>
+                </li>
+            {% endif %}
+            <li class="nav-item mx-lg-1 {% if app.request.get('_route') is same as('ingredients_index') %}{{ 'active' }}{% endif %}">
+                <a class="nav-link" href="{{ path('ingredients_index')|escape }}">Ingredients</a>
+            </li>
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <li class="nav-item mx-lg-1">
+                    <a class="btn btn-sm btn-danger" href="{{ path('cm_logout')|escape }}" id="sign-out">Sign out</a>
+                </li>
+            {% else %}
+                <li class="nav-item mx-lg-1">
+                    <a class="btn btn-sm btn-darker rounded-0" href="{{ path('cm_login')|escape }}" id="sign-in">Sign in</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>

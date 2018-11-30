@@ -2,10 +2,24 @@
 # https://symfony.com/doc/current/security.html
 security:
 
+    role_hierarchy:
+        ROLE_ADMIN: ROLE_USER
+
+    encoders:
+        AppBundle\Entity\User:
+            algorithm: pbkdf2
+            hash_algorithm: sha512
+            encode_as_base64: true
+            iterations: 100000
+
     # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
     providers:
         in_memory:
             memory: ~
+        users:
+            entity:
+                class: AppBundle\Entity\User
+                property: username
 
     firewalls:
         # disables authentication for assets and the profiler, adapt it according to your needs
@@ -13,12 +27,25 @@ security:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
 
-        main:
+        main_area:
+            pattern: ^/
             anonymous: ~
-            # activate different ways to authenticate
+            provider: users
+            form_login:
+                csrf_token_generator: security.csrf.token_manager
+                default_target_path: cm_dashboard
+                check_path: cm_login
+                login_path: cm_login
+                failure_path: cm_login
+                post-only: true
+                remember_me: false
+                username_parameter: _username
+                password_parameter: _password
+            logout:
+                path: cm_logout
+                target: cm_login
+                invalidate_session: true
 
-            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
-            #http_basic: ~
-
-            # https://symfony.com/doc/current/security/form_login_setup.html
-            #form_login: ~
+        api_area:
+            pattern: ^/api
+            anonymous: ~

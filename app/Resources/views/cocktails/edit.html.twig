@@ -1,0 +1,57 @@
+{% extends 'cm_base.html.twig' %}
+
+{% block title %}Edit cocktail{% endblock title %}
+
+{% block stylesheets %}
+    <style>body { background: url("{{ asset('assets/img/svg/background_edit.svg')|escape }}"); }</style>
+{% endblock stylesheets %}
+
+{% block body %}
+    {% include 'components/navbar.html.twig' %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h2 class="text-darker">Edit cocktail</h2>
+                    <a href="{{ path('cocktails_index')|escape }}" class="btn btn-darker rounded-0">Return to list</a>
+                </div>
+                {{ form_start(form) }}
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="{{ form.children.name.vars.id|escape }}">Name:</label>
+                    {{ form_widget(form.name, { 'attr': { 'value': form.vars.value.name|unescape } }) }}
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_description">Description:</label>
+                    {{ form_widget(form.description, { 'attr': {
+                        'value': form.vars.value.description|unescape,
+                        'style': 'min-height: 190px; resize: none;'
+                    } }) }}
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_preparation">Preparation:</label>
+                    {{ form_widget(form.preparation, { 'attr': {
+                        'value': form.vars.value.preparation|unescape,
+                        'style': 'min-height: 190px; resize: none;'
+                    } }) }}
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_difficulty">Difficulty:</label>
+                    {{ form_widget(form.difficulty, { 'attr': { 'value': form.vars.value.difficulty|unescape } }) }}
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_ingredients">This cocktail contains the following ingredients:</label>
+                    <div class="p-4 form-control rounded-0 disabled" id="cocktail_ingredients">
+                        {% set counter = 1 %}
+                        {% for ingredient in cocktail.ingredients %}
+                            <a href="{{ path('ingredient_show', { 'id': ingredient.id })|escape }}">{{ ingredient.name }}</a><span id="comma-{{ counter }}">,&nbsp;</span>
+                            {% set counter = counter + 1 %}
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="col-12 p-0">
+                    {{ form_widget(form.submit, { 'attr': { 'style': 'width: 100% !important;' } }) }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

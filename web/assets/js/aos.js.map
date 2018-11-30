@@ -1,0 +1,743 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://assets-cdn.github.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-Z0JAar9+DkI1NjGVdZr3GivARUgJtA0o2eHlTv7Ou2gshR5awWVf8QGsq11Ns9ZxQLEs+G5/SuARmvpOLMzulw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/frameworks-95aff0b550d3fe338b645a4deebdcb1b.css" />
+  <link crossorigin="anonymous" media="all" integrity="sha512-Q9OXBa6POM9XEiCfd809So5nkqF5fF9C0x6r+ENhto31Esta6/hG0meSbrJpZ9GiJ/Q7KP6rEU/r2X8Dyx5x7g==" rel="stylesheet" href="https://assets-cdn.github.com/assets/github-8539ff6efb69113c34c860c76c5bc3d0.css" />
+  
+  
+  <link crossorigin="anonymous" media="all" integrity="sha512-3VvsUZwbHQjJSGBl1RmFALkUCIN/X1T+tMENn2GWBoffnwhvTzybuwM+WJiOaH6+ROjTtIg0N3AnqAjlDG24uw==" rel="stylesheet" href="https://assets-cdn.github.com/assets/site-4bf0d1fbb978ff70da23996d7eac3d93.css" />
+  
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>cdnjs/aos.js.map at master · cdnjs/cdnjs · GitHub</title>
+    <meta name="description" content="Free and Open Source Public Web CDN for web developer! - cdnjs/cdnjs">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars2.githubusercontent.com/u/637362?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="cdnjs/cdnjs" /><meta property="og:url" content="https://github.com/cdnjs/cdnjs" /><meta property="og:description" content="Free and Open Source Public Web CDN for web developer! - cdnjs/cdnjs" />
+
+  <link rel="assets" href="https://assets-cdn.github.com/">
+  
+  <meta name="pjax-timeout" content="1000">
+  
+  <meta name="request-id" content="85BC:3754:37F6A1C:66FF644:5B85000E" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+  <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+  <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="85BC:3754:37F6A1C:66FF644:5B85000E" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+
+<meta class="js-ga-set" name="dimension1" content="Logged Out">
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="ZDcwMjFmZGE3MmQxNzIzZTVjOGQzZGQ5Yjk0NTg2MjY2YjcwMzFhNDgzODU1YWUzOTM3ZTAzNWQ3NDdjZGFhMHx7InJlbW90ZV9hZGRyZXNzIjoiODUuMTE0LjU1LjEyNiIsInJlcXVlc3RfaWQiOiI4NUJDOjM3NTQ6MzdGNkExQzo2NkZGNjQ0OjVCODUwMDBFIiwidGltZXN0YW1wIjoxNTM1NDQyOTY3LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
+
+    <meta name="enabled-features" content="DASHBOARD_V2_LAYOUT_OPT_IN,EXPLORE_DISCOVER_REPOSITORIES,UNIVERSE_BANNER,FREE_TRIALS,MARKETPLACE_INSIGHTS,MARKETPLACE_PLAN_RESTRICTION_EDITOR,MARKETPLACE_SEARCH,MARKETPLACE_INSIGHTS_CONVERSION_PERCENTAGES">
+
+  <meta name="html-safe-nonce" content="27f9a9e3d5b817e1616a6648a0c49c164953c643">
+
+  <meta http-equiv="x-pjax-version" content="cf7a07a42d412f659c347500cb504366">
+  
+
+      <link href="https://github.com/cdnjs/cdnjs/commits/master.atom" rel="alternate" title="Recent Commits to cdnjs:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/cdnjs/cdnjs git https://github.com/cdnjs/cdnjs.git">
+
+  <meta name="octolytics-dimension-user_id" content="637362" /><meta name="octolytics-dimension-user_login" content="cdnjs" /><meta name="octolytics-dimension-repository_id" content="1409811" /><meta name="octolytics-dimension-repository_nwo" content="cdnjs/cdnjs" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="1409811" /><meta name="octolytics-dimension-repository_network_root_nwo" content="cdnjs/cdnjs" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/cdnjs/cdnjs/blob/master/ajax/libs/aos/2.1.1/aos.js.map" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://assets-cdn.github.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-out env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="px-2 py-4 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+
+        
+
+
+  <header class="Header header-logged-out  position-relative f4 py-3" role="banner" >
+    <div class="container-lg d-flex px-3">
+      <div class="d-flex flex-justify-between flex-items-center">
+        <a class="header-logo-invertocat my-0" href="https://github.com/" aria-label="Homepage" data-ga-click="(Logged out) Header, go to homepage, icon:logo-wordmark; experiment:site_header_dropdowns; group:control">
+          <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        </a>
+
+      </div>
+
+      <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+          <nav class="mt-0">
+            <ul class="d-flex list-style-none">
+                <li class="ml-2">
+                  <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:features; experiment:site_header_dropdowns; group:control" data-selected-links="/features /features/project-management /features/code-review /features/project-management /features/integrations /features" href="/features">
+                    Features
+</a>                </li>
+                <li class="ml-4">
+                  <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:business; experiment:site_header_dropdowns; group:control" data-selected-links="/business /business/security /business/customers /business" href="/business">
+                    Business
+</a>                </li>
+
+                <li class="ml-4">
+                  <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:explore; experiment:site_header_dropdowns; group:control" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                    Explore
+</a>                </li>
+
+                <li class="ml-4">
+                      <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:marketplace; experiment:site_header_dropdowns; group:control" data-selected-links=" /marketplace" href="/marketplace">
+                        Marketplace
+</a>                </li>
+                <li class="ml-4">
+                  <a class="js-selected-navigation-item HeaderNavlink px-0 py-2 m-0" data-ga-click="Header, click, Nav menu - item:pricing; experiment:site_header_dropdowns; group:control" data-selected-links="/pricing /pricing/developer /pricing/team /pricing/business-hosted /pricing/business-enterprise /pricing" href="/pricing">
+                    Pricing
+</a>                </li>
+            </ul>
+          </nav>
+
+        <div class="d-flex">
+            <div class="d-lg-flex flex-items-center mr-3">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="search combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="true"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" data-scope-type="Repository" data-scope-id="1409811" data-scoped-search-url="/cdnjs/cdnjs/search" data-unscoped-search-url="/search" action="/cdnjs/cdnjs/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search"
+          data-unscoped-placeholder="Search GitHub"
+          data-scoped-placeholder="Search"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=PEVf4TbVhUbcMYTI8DMQrJ85U8cuRELPiZNm40Z4wW0NFtL7cvV0FdIwXq68Qygt5Ta5KXQ8F6TObCdts/oZiQ=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://assets-cdn.github.com/images/search-shortcut-hint.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              <ul class="d-none js-jump-to-suggestions-template-container">
+                <li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item">
+                  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center p-2 jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open" href="">
+                    <div class="jump-to-octicon js-jump-to-octicon mr-2 text-center d-none"></div>
+                    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar" alt="" aria-label="Team" src="" width="28" height="28">
+
+                    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+                    </div>
+
+                    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+                      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+                        In this repository
+                      </span>
+                      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+                        All GitHub
+                      </span>
+                      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+
+                    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+                      Jump to
+                      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+                    </div>
+                  </a>
+                </li>
+                <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-repo-octicon-template" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+                <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-project-octicon-template" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+                <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-search-octicon-template" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+              </ul>
+              <ul class="d-none js-jump-to-no-results-template-container">
+                <li class="d-flex flex-justify-center flex-items-center p-3 f5 d-none">
+                  <span class="text-gray">No suggested jump to results</span>
+                </li>
+              </ul>
+
+              <ul id="jump-to-results" class="js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container" >
+                <li class="d-flex flex-justify-center flex-items-center p-0 f5">
+                  <img src="https://assets-cdn.github.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+                </li>
+              </ul>
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <span class="d-inline-block">
+              <div class="HeaderNavlink px-0 py-2 m-0">
+                <a class="text-bold text-white no-underline" href="/login?return_to=%2Fcdnjs%2Fcdnjs%2Fblob%2Fmaster%2Fajax%2Flibs%2Faos%2F2.1.1%2Faos.js.map" data-ga-click="(Logged out) Header, clicked Sign in, text:sign-in; experiment:site_header_dropdowns; group:control">Sign in</a>
+                  <span class="text-gray">or</span>
+                  <a class="text-bold text-white no-underline" href="/join?source=header-repo" data-ga-click="(Logged out) Header, clicked Sign up, text:sign-up; experiment:site_header_dropdowns; group:control">Sign up</a>
+              </div>
+          </span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+
+</div>
+
+
+
+  <div role="main" class="application-main ">
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <div id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+
+
+
+  
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+  <li>
+      <a href="/login?return_to=%2Fcdnjs%2Fcdnjs"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-s"
+    aria-label="You must be signed in to watch a repository" rel="nofollow">
+    <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+    Watch
+  </a>
+  <a class="social-count" href="/cdnjs/cdnjs/watchers"
+     aria-label="261 users are watching this repository">
+    261
+  </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fcdnjs%2Fcdnjs"
+    class="btn btn-sm btn-with-count tooltipped tooltipped-s"
+    aria-label="You must be signed in to star a repository" rel="nofollow">
+    <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+    Star
+  </a>
+
+    <a class="social-count js-social-count" href="/cdnjs/cdnjs/stargazers"
+      aria-label="6592 users starred this repository">
+      6,592
+    </a>
+
+  </li>
+
+  <li>
+      <a href="/login?return_to=%2Fcdnjs%2Fcdnjs"
+        class="btn btn-sm btn-with-count tooltipped tooltipped-s"
+        aria-label="You must be signed in to fork a repository" rel="nofollow">
+        <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+        Fork
+      </a>
+
+    <a href="/cdnjs/cdnjs/network/members" class="social-count"
+       aria-label="3670 users forked this repository">
+      3,670
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" href="/cdnjs">cdnjs</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/cdnjs/cdnjs">cdnjs</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+     role="navigation"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /cdnjs/cdnjs" href="/cdnjs/cdnjs">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /cdnjs/cdnjs/issues" href="/cdnjs/cdnjs/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">741</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /cdnjs/cdnjs/pulls" href="/cdnjs/cdnjs/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">116</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /cdnjs/cdnjs/wiki" href="/cdnjs/cdnjs/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+
+  <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse /cdnjs/cdnjs/pulse" href="/cdnjs/cdnjs/pulse">
+    <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+    Insights
+</a>
+
+</nav>
+
+
+  </div>
+
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+  <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/cdnjs/cdnjs/blob/fe2e8202d740795c781da75c968b84e12c36b05d/ajax/libs/aos/2.1.1/aos.js.map">Permalink</a>
+
+  <!-- blob contrib key: blob_contributors:v21:8cee5d61fee3940f0e51c25c7f023ab0 -->
+
+      <div class="signup-prompt-bg rounded-1">
+      <div class="signup-prompt p-4 text-center mb-4 rounded-1">
+        <div class="position-relative">
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form action="/site/dismiss_signup_prompt" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LUpgwkvLMeWoXNaOGIQpdCkzSwy26sLescZPgUddp3TMHsl522L31h1bHGcwZsFeA6mI6dc9zXqznLP2UDAmww==" />
+            <button type="submit" class="position-absolute top-0 right-0 btn-link link-gray" data-ga-click="(Logged out) Sign up prompt, clicked Dismiss, text:dismiss">
+              Dismiss
+            </button>
+</form>          <h3 class="pt-2">Join GitHub today</h3>
+          <p class="col-6 mx-auto">GitHub is home to over 28 million developers working together to host and review code, manage projects, and build software together.</p>
+          <a class="btn btn-primary" href="/join?source=prompt-blob-show" data-ga-click="(Logged out) Sign up prompt, clicked Sign up, text:sign-up">Sign up</a>
+        </div>
+      </div>
+    </div>
+
+
+  <div class="file-navigation">
+    
+<div class="select-menu branch-select-menu js-menu-container js-select-menu float-left">
+  <button class=" btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
+    
+    type="button" aria-label="Switch branches or tags" aria-expanded="false" aria-haspopup="true">
+      <i>Branch:</i>
+      <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax>
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg class="octicon octicon-x js-menu-close" role="img" aria-label="Close" viewBox="0 0 12 16" version="1.1" width="12" height="16"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="form-control js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open selected"
+               href="/cdnjs/cdnjs/blob/master/ajax/libs/aos/2.1.1/aos.js.map"
+               data-name="master"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                master
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+               href="/cdnjs/cdnjs/blob/npm-file-map-support/ajax/libs/aos/2.1.1/aos.js.map"
+               data-name="npm-file-map-support"
+               data-skip-pjax="true"
+               rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target js-select-menu-filter-text">
+                npm-file-map-support
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/cdnjs/cdnjs/tree/2018/ajax/libs/aos/2.1.1/aos.js.map"
+              data-name="2018"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2018">
+                2018
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/cdnjs/cdnjs/tree/2017/ajax/libs/aos/2.1.1/aos.js.map"
+              data-name="2017"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2017">
+                2017
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/cdnjs/cdnjs/tree/2016/ajax/libs/aos/2.1.1/aos.js.map"
+              data-name="2016"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2016">
+                2016
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/cdnjs/cdnjs/tree/2015/ajax/libs/aos/2.1.1/aos.js.map"
+              data-name="2015"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2015">
+                2015
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/cdnjs/cdnjs/tree/2014/ajax/libs/aos/2.1.1/aos.js.map"
+              data-name="2014"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2014">
+                2014
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/cdnjs/cdnjs/tree/2013/ajax/libs/aos/2.1.1/aos.js.map"
+              data-name="2013"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2013">
+                2013
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open "
+              href="/cdnjs/cdnjs/tree/2012/ajax/libs/aos/2.1.1/aos.js.map"
+              data-name="2012"
+              data-skip-pjax="true"
+              rel="nofollow">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <span class="select-menu-item-text css-truncate-target" title="2012">
+                2012
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <div class="BtnGroup float-right">
+      <a href="/cdnjs/cdnjs/find/master"
+            class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+            data-pjax
+            data-hotkey="t">
+        Find file
+      </a>
+      <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
+        Copy path
+      </clipboard-copy>
+    </div>
+    <div id="blob-path" class="breadcrumb">
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/cdnjs/cdnjs"><span>cdnjs</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/cdnjs/cdnjs/tree/master/ajax"><span>ajax</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/cdnjs/cdnjs/tree/master/ajax/libs"><span>libs</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/cdnjs/cdnjs/tree/master/ajax/libs/aos"><span>aos</span></a></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/cdnjs/cdnjs/tree/master/ajax/libs/aos/2.1.1"><span>2.1.1</span></a></span><span class="separator">/</span><strong class="final-path">aos.js.map</strong>
+    </div>
+  </div>
+
+
+  <include-fragment src="/cdnjs/cdnjs/contributors/master/ajax/libs/aos/2.1.1/aos.js.map" class="commit-tease commit-loader">
+    <div>
+      Fetching contributors&hellip;
+    </div>
+
+    <div class="commit-tease-contributors">
+        <img alt="" class="loader-loading float-left" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+      <span class="loader-error">Cannot retrieve contributors at this time</span>
+    </div>
+</include-fragment>
+
+
+  <div class="file">
+    <div class="file-header">
+  <div class="file-actions">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/cdnjs/cdnjs/raw/master/ajax/libs/aos/2.1.1/aos.js.map">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/cdnjs/cdnjs/blame/master/ajax/libs/aos/2.1.1/aos.js.map">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/cdnjs/cdnjs/commits/master/ajax/libs/aos/2.1.1/aos.js.map">History</a>
+    </div>
+
+        <a class="btn-octicon tooltipped tooltipped-nw"
+           href="https://desktop.github.com"
+           aria-label="Open this file in GitHub Desktop"
+           data-ga-click="Repository, open with desktop, type:windows">
+            <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+        </a>
+
+        <button type="button" class="btn-octicon disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+        </button>
+        <button type="button" class="btn-octicon btn-octicon-danger disabled tooltipped tooltipped-nw"
+          aria-label="You must be signed in to make or propose changes">
+          <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+        </button>
+  </div>
+
+  <div class="file-info">
+      1 lines (1 sloc)
+      <span class="file-info-divider"></span>
+    84.7 KB
+  </div>
+</div>
+
+    
+
+  <div itemprop="text" class="blob-wrapper data type-text">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">{&quot;version&quot;:3,&quot;sources&quot;:[&quot;webpack:///webpack/universalModuleDefinition&quot;,&quot;webpack:///aos.js&quot;,&quot;webpack:///webpack/bootstrap 9a1cfc5ebe1d35b05a0f&quot;,&quot;webpack:///./src/js/aos.js&quot;,&quot;webpack:///./~/lodash.throttle/index.js&quot;,&quot;webpack:///./~/lodash.debounce/index.js&quot;,&quot;webpack:///./src/js/libs/observer.js&quot;,&quot;webpack:///./src/js/helpers/detector.js&quot;,&quot;webpack:///./src/js/helpers/handleScroll.js&quot;,&quot;webpack:///./src/js/helpers/prepare.js&quot;,&quot;webpack:///./src/js/helpers/calculateOffset.js&quot;,&quot;webpack:///./src/js/libs/offset.js&quot;,&quot;webpack:///./src/js/helpers/elements.js&quot;],&quot;names&quot;:[&quot;root&quot;,&quot;factory&quot;,&quot;exports&quot;,&quot;module&quot;,&quot;define&quot;,&quot;amd&quot;,&quot;this&quot;,&quot;modules&quot;,&quot;__webpack_require__&quot;,&quot;moduleId&quot;,&quot;installedModules&quot;,&quot;id&quot;,&quot;loaded&quot;,&quot;call&quot;,&quot;m&quot;,&quot;c&quot;,&quot;p&quot;,&quot;_interopRequireDefault&quot;,&quot;obj&quot;,&quot;__esModule&quot;,&quot;default&quot;,&quot;_extends&quot;,&quot;Object&quot;,&quot;assign&quot;,&quot;target&quot;,&quot;i&quot;,&quot;arguments&quot;,&quot;length&quot;,&quot;source&quot;,&quot;key&quot;,&quot;prototype&quot;,&quot;hasOwnProperty&quot;,&quot;_aos&quot;,&quot;_lodash&quot;,&quot;_lodash2&quot;,&quot;_lodash3&quot;,&quot;_lodash4&quot;,&quot;_observer&quot;,&quot;_observer2&quot;,&quot;_detector&quot;,&quot;_detector2&quot;,&quot;_handleScroll&quot;,&quot;_handleScroll2&quot;,&quot;_prepare&quot;,&quot;_prepare2&quot;,&quot;_elements&quot;,&quot;_elements2&quot;,&quot;$aosElements&quot;,&quot;initialized&quot;,&quot;browserNotSupported&quot;,&quot;document&quot;,&quot;all&quot;,&quot;window&quot;,&quot;atob&quot;,&quot;options&quot;,&quot;offset&quot;,&quot;delay&quot;,&quot;easing&quot;,&quot;duration&quot;,&quot;disable&quot;,&quot;once&quot;,&quot;startEvent&quot;,&quot;refresh&quot;,&quot;initialize&quot;,&quot;undefined&quot;,&quot;refreshHard&quot;,&quot;forEach&quot;,&quot;el&quot;,&quot;node&quot;,&quot;removeAttribute&quot;,&quot;isDisabled&quot;,&quot;optionDisable&quot;,&quot;mobile&quot;,&quot;phone&quot;,&quot;tablet&quot;,&quot;init&quot;,&quot;settings&quot;,&quot;querySelector&quot;,&quot;setAttribute&quot;,&quot;indexOf&quot;,&quot;readyState&quot;,&quot;addEventListener&quot;,&quot;event&quot;,&quot;nodeType&quot;,&quot;hasAttribute&quot;,&quot;throttle&quot;,&quot;func&quot;,&quot;wait&quot;,&quot;leading&quot;,&quot;trailing&quot;,&quot;TypeError&quot;,&quot;FUNC_ERROR_TEXT&quot;,&quot;isObject&quot;,&quot;debounce&quot;,&quot;maxWait&quot;,&quot;value&quot;,&quot;type&quot;,&quot;_typeof&quot;,&quot;Symbol&quot;,&quot;iterator&quot;,&quot;constructor&quot;,&quot;invokeFunc&quot;,&quot;time&quot;,&quot;args&quot;,&quot;lastArgs&quot;,&quot;thisArg&quot;,&quot;lastThis&quot;,&quot;lastInvokeTime&quot;,&quot;result&quot;,&quot;apply&quot;,&quot;leadingEdge&quot;,&quot;timerId&quot;,&quot;setTimeout&quot;,&quot;timerExpired&quot;,&quot;remainingWait&quot;,&quot;timeSinceLastCall&quot;,&quot;lastCallTime&quot;,&quot;timeSinceLastInvoke&quot;,&quot;maxing&quot;,&quot;nativeMin&quot;,&quot;shouldInvoke&quot;,&quot;now&quot;,&quot;trailingEdge&quot;,&quot;clearTimeout&quot;,&quot;cancel&quot;,&quot;flush&quot;,&quot;debounced&quot;,&quot;isInvoking&quot;,&quot;toNumber&quot;,&quot;nativeMax&quot;,&quot;isFunction&quot;,&quot;tag&quot;,&quot;objectToString&quot;,&quot;funcTag&quot;,&quot;genTag&quot;,&quot;isObjectLike&quot;,&quot;isSymbol&quot;,&quot;symbolTag&quot;,&quot;NAN&quot;,&quot;other&quot;,&quot;valueOf&quot;,&quot;replace&quot;,&quot;reTrim&quot;,&quot;isBinary&quot;,&quot;reIsBinary&quot;,&quot;test&quot;,&quot;reIsOctal&quot;,&quot;freeParseInt&quot;,&quot;slice&quot;,&quot;reIsBadHex&quot;,&quot;parseInt&quot;,&quot;objectProto&quot;,&quot;toString&quot;,&quot;Math&quot;,&quot;max&quot;,&quot;min&quot;,&quot;Date&quot;,&quot;ready&quot;,&quot;selector&quot;,&quot;fn&quot;,&quot;listeners&quot;,&quot;push&quot;,&quot;observer&quot;,&quot;MutationObserver&quot;,&quot;check&quot;,&quot;observe&quot;,&quot;doc&quot;,&quot;documentElement&quot;,&quot;childList&quot;,&quot;subtree&quot;,&quot;removedNodes&quot;,&quot;listener&quot;,&quot;elements&quot;,&quot;len&quot;,&quot;querySelectorAll&quot;,&quot;element&quot;,&quot;j&quot;,&quot;jLen&quot;,&quot;defineProperty&quot;,&quot;WebKitMutationObserver&quot;,&quot;_classCallCheck&quot;,&quot;instance&quot;,&quot;Constructor&quot;,&quot;_createClass&quot;,&quot;defineProperties&quot;,&quot;props&quot;,&quot;descriptor&quot;,&quot;enumerable&quot;,&quot;configurable&quot;,&quot;writable&quot;,&quot;protoProps&quot;,&quot;staticProps&quot;,&quot;Detector&quot;,&quot;a&quot;,&quot;substr&quot;,&quot;navigator&quot;,&quot;userAgent&quot;,&quot;vendor&quot;,&quot;opera&quot;,&quot;setState&quot;,&quot;top&quot;,&quot;attrOnce&quot;,&quot;getAttribute&quot;,&quot;position&quot;,&quot;classList&quot;,&quot;add&quot;,&quot;remove&quot;,&quot;handleScroll&quot;,&quot;$elements&quot;,&quot;scrollTop&quot;,&quot;pageYOffset&quot;,&quot;windowHeight&quot;,&quot;innerHeight&quot;,&quot;_calculateOffset&quot;,&quot;_calculateOffset2&quot;,&quot;prepare&quot;,&quot;_offset&quot;,&quot;_offset2&quot;,&quot;calculateOffset&quot;,&quot;optionalOffset&quot;,&quot;elementOffsetTop&quot;,&quot;additionalOffset&quot;,&quot;attrs&quot;,&quot;anchor&quot;,&quot;anchorPlacement&quot;,&quot;isNaN&quot;,&quot;offsetHeight&quot;,&quot;_x&quot;,&quot;_y&quot;,&quot;offsetLeft&quot;,&quot;offsetTop&quot;,&quot;tagName&quot;,&quot;scrollLeft&quot;,&quot;offsetParent&quot;,&quot;left&quot;,&quot;createArrayWithElements&quot;,&quot;finalElements&quot;],&quot;mappings&quot;:&quot;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&quot;,&quot;file&quot;:&quot;aos.js&quot;,&quot;sourcesContent&quot;:[&quot;(function webpackUniversalModuleDefinition(root, factory) {\n\tif(typeof exports === &#39;object&#39; &amp;&amp; typeof module === &#39;object&#39;)\n\t\tmodule.exports = factory();\n\telse if(typeof define === &#39;function&#39; &amp;&amp; define.amd)\n\t\tdefine([], factory);\n\telse if(typeof exports === &#39;object&#39;)\n\t\texports[\&quot;AOS\&quot;] = factory();\n\telse\n\t\troot[\&quot;AOS\&quot;] = factory();\n})(this, function() {\nreturn \n\n\n/** WEBPACK FOOTER **\n ** webpack/universalModuleDefinition\n **/&quot;,&quot;(function webpackUniversalModuleDefinition(root, factory) {\n\tif(typeof exports === &#39;object&#39; &amp;&amp; typeof module === &#39;object&#39;)\n\t\tmodule.exports = factory();\n\telse if(typeof define === &#39;function&#39; &amp;&amp; define.amd)\n\t\tdefine([], factory);\n\telse if(typeof exports === &#39;object&#39;)\n\t\texports[\&quot;AOS\&quot;] = factory();\n\telse\n\t\troot[\&quot;AOS\&quot;] = factory();\n})(this, function() {\nreturn /******/ (function(modules) { // webpackBootstrap\n/******/ \t// The module cache\n/******/ \tvar installedModules = {};\n/******/\n/******/ \t// The require function\n/******/ \tfunction __webpack_require__(moduleId) {\n/******/\n/******/ \t\t// Check if module is in cache\n/******/ \t\tif(installedModules[moduleId])\n/******/ \t\t\treturn installedModules[moduleId].exports;\n/******/\n/******/ \t\t// Create a new module (and put it into the cache)\n/******/ \t\tvar module = installedModules[moduleId] = {\n/******/ \t\t\texports: {},\n/******/ \t\t\tid: moduleId,\n/******/ \t\t\tloaded: false\n/******/ \t\t};\n/******/\n/******/ \t\t// Execute the module function\n/******/ \t\tmodules[moduleId].call(module.exports, module, module.exports, __webpack_require__);\n/******/\n/******/ \t\t// Flag the module as loaded\n/******/ \t\tmodule.loaded = true;\n/******/\n/******/ \t\t// Return the exports of the module\n/******/ \t\treturn module.exports;\n/******/ \t}\n/******/\n/******/\n/******/ \t// expose the modules object (__webpack_modules__)\n/******/ \t__webpack_require__.m = modules;\n/******/\n/******/ \t// expose the module cache\n/******/ \t__webpack_require__.c = installedModules;\n/******/\n/******/ \t// __webpack_public_path__\n/******/ \t__webpack_require__.p = \&quot;dist/\&quot;;\n/******/\n/******/ \t// Load entry module and return exports\n/******/ \treturn __webpack_require__(0);\n/******/ })\n/************************************************************************/\n/******/ ([\n/* 0 */\n/***/ function(module, exports, __webpack_require__) {\n\n\t&#39;use strict&#39;;\n\t\n\tvar _extends = Object.assign || function (target) { for (var i = 1; i &lt; arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; /**\n\t                                                                                                                                                                                                                                                                   * *******************************************************\n\t                                                                                                                                                                                                                                                                   * AOS (Animate on scroll) - wowjs alternative\n\t                                                                                                                                                                                                                                                                   * made to animate elements on scroll in both directions\n\t                                                                                                                                                                                                                                                                   * *******************************************************\n\t                                                                                                                                                                                                                                                                   */\n\t\n\t// Modules &amp; helpers\n\t\n\t\n\tvar _aos = __webpack_require__(1);\n\t\n\tvar _aos2 = _interopRequireDefault(_aos);\n\t\n\tvar _lodash = __webpack_require__(5);\n\t\n\tvar _lodash2 = _interopRequireDefault(_lodash);\n\t\n\tvar _lodash3 = __webpack_require__(6);\n\t\n\tvar _lodash4 = _interopRequireDefault(_lodash3);\n\t\n\tvar _observer = __webpack_require__(7);\n\t\n\tvar _observer2 = _interopRequireDefault(_observer);\n\t\n\tvar _detector = __webpack_require__(8);\n\t\n\tvar _detector2 = _interopRequireDefault(_detector);\n\t\n\tvar _handleScroll = __webpack_require__(9);\n\t\n\tvar _handleScroll2 = _interopRequireDefault(_handleScroll);\n\t\n\tvar _prepare = __webpack_require__(10);\n\t\n\tvar _prepare2 = _interopRequireDefault(_prepare);\n\t\n\tvar _elements = __webpack_require__(13);\n\t\n\tvar _elements2 = _interopRequireDefault(_elements);\n\t\n\tfunction _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }\n\t\n\t/**\n\t * Private variables\n\t */\n\tvar $aosElements = [];\n\tvar initialized = false;\n\t\n\t// Detect not supported browsers (&lt;=IE9)\n\t// http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805\n\tvar browserNotSupported = document.all &amp;&amp; !window.atob;\n\t\n\t/**\n\t * Default options\n\t */\n\tvar options = {\n\t  offset: 120,\n\t  delay: 0,\n\t  easing: &#39;ease&#39;,\n\t  duration: 400,\n\t  disable: false,\n\t  once: false,\n\t  startEvent: &#39;DOMContentLoaded&#39;\n\t};\n\t\n\t/**\n\t * Refresh AOS\n\t */\n\tvar refresh = function refresh() {\n\t  var initialize = arguments.length &lt;= 0 || arguments[0] === undefined ? false : arguments[0];\n\t\n\t  // Allow refresh only when it was first initialized on startEvent\n\t  if (initialize) initialized = true;\n\t\n\t  if (initialized) {\n\t    // Extend elements objects in $aosElements with their positions\n\t    $aosElements = (0, _prepare2.default)($aosElements, options);\n\t    // Perform scroll event, to refresh view and show/hide elements\n\t    (0, _handleScroll2.default)($aosElements, options.once);\n\t\n\t    return $aosElements;\n\t  }\n\t};\n\t\n\t/**\n\t * Hard refresh\n\t * create array with new elements and trigger refresh\n\t */\n\tvar refreshHard = function refreshHard() {\n\t  $aosElements = (0, _elements2.default)();\n\t  refresh();\n\t};\n\t\n\t/**\n\t * Disable AOS\n\t * Remove all attributes to reset applied styles\n\t */\n\tvar disable = function disable() {\n\t  $aosElements.forEach(function (el, i) {\n\t    el.node.removeAttribute(&#39;data-aos&#39;);\n\t    el.node.removeAttribute(&#39;data-aos-easing&#39;);\n\t    el.node.removeAttribute(&#39;data-aos-duration&#39;);\n\t    el.node.removeAttribute(&#39;data-aos-delay&#39;);\n\t  });\n\t};\n\t\n\t/**\n\t * Check if AOS should be disabled based on provided setting\n\t */\n\tvar isDisabled = function isDisabled(optionDisable) {\n\t  return optionDisable === true || optionDisable === &#39;mobile&#39; &amp;&amp; _detector2.default.mobile() || optionDisable === &#39;phone&#39; &amp;&amp; _detector2.default.phone() || optionDisable === &#39;tablet&#39; &amp;&amp; _detector2.default.tablet() || typeof optionDisable === &#39;function&#39; &amp;&amp; optionDisable() === true;\n\t};\n\t\n\t/**\n\t * Initializing AOS\n\t * - Create options merging defaults with user defined options\n\t * - Set attributes on &lt;body&gt; as global setting - css relies on it\n\t * - Attach preparing elements to options.startEvent,\n\t *   window resize and orientation change\n\t * - Attach function that handle scroll and everything connected to it\n\t *   to window scroll event and fire once document is ready to set initial state\n\t */\n\tvar init = function init(settings) {\n\t  options = _extends(options, settings);\n\t\n\t  // Create initial array with elements -&gt; to be fullfilled later with prepare()\n\t  $aosElements = (0, _elements2.default)();\n\t\n\t  /**\n\t   * Don&#39;t init plugin if option `disable` is set\n\t   * or when browser is not supported\n\t   */\n\t  if (isDisabled(options.disable) || browserNotSupported) {\n\t    return disable();\n\t  }\n\t\n\t  /**\n\t   * Set global settings on body, based on options\n\t   * so CSS can use it\n\t   */\n\t  document.querySelector(&#39;body&#39;).setAttribute(&#39;data-aos-easing&#39;, options.easing);\n\t  document.querySelector(&#39;body&#39;).setAttribute(&#39;data-aos-duration&#39;, options.duration);\n\t  document.querySelector(&#39;body&#39;).setAttribute(&#39;data-aos-delay&#39;, options.delay);\n\t\n\t  /**\n\t   * Handle initializing\n\t   */\n\t  if (options.startEvent === &#39;DOMContentLoaded&#39; &amp;&amp; [&#39;complete&#39;, &#39;interactive&#39;].indexOf(document.readyState) &gt; -1) {\n\t    // Initialize AOS if default startEvent was already fired\n\t    refresh(true);\n\t  } else if (options.startEvent === &#39;load&#39;) {\n\t    // If start event is &#39;Load&#39; - attach listener to window\n\t    window.addEventListener(options.startEvent, function () {\n\t      refresh(true);\n\t    });\n\t  } else {\n\t    // Listen to options.startEvent and initialize AOS\n\t    document.addEventListener(options.startEvent, function () {\n\t      refresh(true);\n\t    });\n\t  }\n\t\n\t  /**\n\t   * Refresh plugin on window resize or orientation change\n\t   */\n\t  window.addEventListener(&#39;resize&#39;, (0, _lodash4.default)(refresh, 50, true));\n\t  window.addEventListener(&#39;orientationchange&#39;, (0, _lodash4.default)(refresh, 50, true));\n\t\n\t  /**\n\t   * Handle scroll event to animate elements on scroll\n\t   */\n\t  window.addEventListener(&#39;scroll&#39;, (0, _lodash2.default)(function () {\n\t    (0, _handleScroll2.default)($aosElements, options.once);\n\t  }, 99));\n\t\n\t  /**\n\t   * Watch if nodes are removed\n\t   * If so refresh plugin\n\t   */\n\t  document.addEventListener(&#39;DOMNodeRemoved&#39;, function (event) {\n\t    var el = event.target;\n\t    if (el &amp;&amp; el.nodeType === 1 &amp;&amp; el.hasAttribute &amp;&amp; el.hasAttribute(&#39;data-aos&#39;)) {\n\t      (0, _lodash4.default)(refreshHard, 50, true);\n\t    }\n\t  });\n\t\n\t  /**\n\t   * Observe [aos] elements\n\t   * If something is loaded by AJAX\n\t   * it&#39;ll refresh plugin automatically\n\t   */\n\t  (0, _observer2.default)(&#39;[data-aos]&#39;, refreshHard);\n\t\n\t  return $aosElements;\n\t};\n\t\n\t/**\n\t * Export Public API\n\t */\n\t\n\tmodule.exports = {\n\t  init: init,\n\t  refresh: refresh,\n\t  refreshHard: refreshHard\n\t};\n\n/***/ },\n/* 1 */\n/***/ function(module, exports) {\n\n\t// removed by extract-text-webpack-plugin\n\n/***/ },\n/* 2 */,\n/* 3 */,\n/* 4 */,\n/* 5 */\n/***/ function(module, exports, __webpack_require__) {\n\n\t&#39;use strict&#39;;\n\t\n\tvar _typeof = typeof Symbol === \&quot;function\&quot; &amp;&amp; typeof Symbol.iterator === \&quot;symbol\&quot; ? function (obj) { return typeof obj; } : function (obj) { return obj &amp;&amp; typeof Symbol === \&quot;function\&quot; &amp;&amp; obj.constructor === Symbol ? \&quot;symbol\&quot; : typeof obj; };\n\t\n\t/**\n\t * lodash 4.0.1 (Custom Build) &lt;https://lodash.com/&gt;\n\t * Build: `lodash modularize exports=\&quot;npm\&quot; -o ./`\n\t * Copyright 2012-2016 The Dojo Foundation &lt;http://dojofoundation.org/&gt;\n\t * Based on Underscore.js 1.8.3 &lt;http://underscorejs.org/LICENSE&gt;\n\t * Copyright 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative Reporters &amp; Editors\n\t * Available under MIT license &lt;https://lodash.com/license&gt;\n\t */\n\tvar debounce = __webpack_require__(6);\n\t\n\t/** Used as the `TypeError` message for \&quot;Functions\&quot; methods. */\n\tvar FUNC_ERROR_TEXT = &#39;Expected a function&#39;;\n\t\n\t/**\n\t * Creates a throttled function that only invokes `func` at most once per\n\t * every `wait` milliseconds. The throttled function comes with a `cancel`\n\t * method to cancel delayed `func` invocations and a `flush` method to\n\t * immediately invoke them. Provide an options object to indicate whether\n\t * `func` should be invoked on the leading and/or trailing edge of the `wait`\n\t * timeout. The `func` is invoked with the last arguments provided to the\n\t * throttled function. Subsequent calls to the throttled function return the\n\t * result of the last `func` invocation.\n\t *\n\t * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked\n\t * on the trailing edge of the timeout only if the throttled function is\n\t * invoked more than once during the `wait` timeout.\n\t *\n\t * See [David Corbacho&#39;s article](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)\n\t * for details over the differences between `_.throttle` and `_.debounce`.\n\t *\n\t * @static\n\t * @memberOf _\n\t * @category Function\n\t * @param {Function} func The function to throttle.\n\t * @param {number} [wait=0] The number of milliseconds to throttle invocations to.\n\t * @param {Object} [options] The options object.\n\t * @param {boolean} [options.leading=true] Specify invoking on the leading\n\t *  edge of the timeout.\n\t * @param {boolean} [options.trailing=true] Specify invoking on the trailing\n\t *  edge of the timeout.\n\t * @returns {Function} Returns the new throttled function.\n\t * @example\n\t *\n\t * // Avoid excessively updating the position while scrolling.\n\t * jQuery(window).on(&#39;scroll&#39;, _.throttle(updatePosition, 100));\n\t *\n\t * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.\n\t * var throttled = _.throttle(renewToken, 300000, { &#39;trailing&#39;: false });\n\t * jQuery(element).on(&#39;click&#39;, throttled);\n\t *\n\t * // Cancel the trailing throttled invocation.\n\t * jQuery(window).on(&#39;popstate&#39;, throttled.cancel);\n\t */\n\tfunction throttle(func, wait, options) {\n\t  var leading = true,\n\t      trailing = true;\n\t\n\t  if (typeof func != &#39;function&#39;) {\n\t    throw new TypeError(FUNC_ERROR_TEXT);\n\t  }\n\t  if (isObject(options)) {\n\t    leading = &#39;leading&#39; in options ? !!options.leading : leading;\n\t    trailing = &#39;trailing&#39; in options ? !!options.trailing : trailing;\n\t  }\n\t  return debounce(func, wait, {\n\t    &#39;leading&#39;: leading,\n\t    &#39;maxWait&#39;: wait,\n\t    &#39;trailing&#39;: trailing\n\t  });\n\t}\n\t\n\t/**\n\t * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.\n\t * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String(&#39;&#39;)`)\n\t *\n\t * @static\n\t * @memberOf _\n\t * @category Lang\n\t * @param {*} value The value to check.\n\t * @returns {boolean} Returns `true` if `value` is an object, else `false`.\n\t * @example\n\t *\n\t * _.isObject({});\n\t * // =&gt; true\n\t *\n\t * _.isObject([1, 2, 3]);\n\t * // =&gt; true\n\t *\n\t * _.isObject(_.noop);\n\t * // =&gt; true\n\t *\n\t * _.isObject(null);\n\t * // =&gt; false\n\t */\n\tfunction isObject(value) {\n\t  var type = typeof value === &#39;undefined&#39; ? &#39;undefined&#39; : _typeof(value);\n\t  return !!value &amp;&amp; (type == &#39;object&#39; || type == &#39;function&#39;);\n\t}\n\t\n\tmodule.exports = throttle;\n\n/***/ },\n/* 6 */\n/***/ function(module, exports) {\n\n\t&#39;use strict&#39;;\n\t\n\tvar _typeof = typeof Symbol === \&quot;function\&quot; &amp;&amp; typeof Symbol.iterator === \&quot;symbol\&quot; ? function (obj) { return typeof obj; } : function (obj) { return obj &amp;&amp; typeof Symbol === \&quot;function\&quot; &amp;&amp; obj.constructor === Symbol ? \&quot;symbol\&quot; : typeof obj; };\n\t\n\t/**\n\t * lodash 4.0.6 (Custom Build) &lt;https://lodash.com/&gt;\n\t * Build: `lodash modularize exports=\&quot;npm\&quot; -o ./`\n\t * Copyright jQuery Foundation and other contributors &lt;https://jquery.org/&gt;\n\t * Released under MIT license &lt;https://lodash.com/license&gt;\n\t * Based on Underscore.js 1.8.3 &lt;http://underscorejs.org/LICENSE&gt;\n\t * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters &amp; Editors\n\t */\n\t\n\t/** Used as the `TypeError` message for \&quot;Functions\&quot; methods. */\n\tvar FUNC_ERROR_TEXT = &#39;Expected a function&#39;;\n\t\n\t/** Used as references for various `Number` constants. */\n\tvar NAN = 0 / 0;\n\t\n\t/** `Object#toString` result references. */\n\tvar funcTag = &#39;[object Function]&#39;,\n\t    genTag = &#39;[object GeneratorFunction]&#39;,\n\t    symbolTag = &#39;[object Symbol]&#39;;\n\t\n\t/** Used to match leading and trailing whitespace. */\n\tvar reTrim = /^\\s+|\\s+$/g;\n\t\n\t/** Used to detect bad signed hexadecimal string values. */\n\tvar reIsBadHex = /^[-+]0x[0-9a-f]+$/i;\n\t\n\t/** Used to detect binary string values. */\n\tvar reIsBinary = /^0b[01]+$/i;\n\t\n\t/** Used to detect octal string values. */\n\tvar reIsOctal = /^0o[0-7]+$/i;\n\t\n\t/** Built-in method references without a dependency on `root`. */\n\tvar freeParseInt = parseInt;\n\t\n\t/** Used for built-in method references. */\n\tvar objectProto = Object.prototype;\n\t\n\t/**\n\t * Used to resolve the\n\t * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)\n\t * of values.\n\t */\n\tvar objectToString = objectProto.toString;\n\t\n\t/* Built-in method references for those with the same name as other `lodash` methods. */\n\tvar nativeMax = Math.max,\n\t    nativeMin = Math.min;\n\t\n\t/**\n\t * Gets the timestamp of the number of milliseconds that have elapsed since\n\t * the Unix epoch (1 January 1970 00:00:00 UTC).\n\t *\n\t * @static\n\t * @memberOf _\n\t * @since 2.4.0\n\t * @type {Function}\n\t * @category Date\n\t * @returns {number} Returns the timestamp.\n\t * @example\n\t *\n\t * _.defer(function(stamp) {\n\t *   console.log(_.now() - stamp);\n\t * }, _.now());\n\t * // =&gt; Logs the number of milliseconds it took for the deferred function to be invoked.\n\t */\n\tvar now = Date.now;\n\t\n\t/**\n\t * Creates a debounced function that delays invoking `func` until after `wait`\n\t * milliseconds have elapsed since the last time the debounced function was\n\t * invoked. The debounced function comes with a `cancel` method to cancel\n\t * delayed `func` invocations and a `flush` method to immediately invoke them.\n\t * Provide an options object to indicate whether `func` should be invoked on\n\t * the leading and/or trailing edge of the `wait` timeout. The `func` is invoked\n\t * with the last arguments provided to the debounced function. Subsequent calls\n\t * to the debounced function return the result of the last `func` invocation.\n\t *\n\t * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked\n\t * on the trailing edge of the timeout only if the debounced function is\n\t * invoked more than once during the `wait` timeout.\n\t *\n\t * See [David Corbacho&#39;s article](https://css-tricks.com/debouncing-throttling-explained-examples/)\n\t * for details over the differences between `_.debounce` and `_.throttle`.\n\t *\n\t * @static\n\t * @memberOf _\n\t * @since 0.1.0\n\t * @category Function\n\t * @param {Function} func The function to debounce.\n\t * @param {number} [wait=0] The number of milliseconds to delay.\n\t * @param {Object} [options={}] The options object.\n\t * @param {boolean} [options.leading=false]\n\t *  Specify invoking on the leading edge of the timeout.\n\t * @param {number} [options.maxWait]\n\t *  The maximum time `func` is allowed to be delayed before it&#39;s invoked.\n\t * @param {boolean} [options.trailing=true]\n\t *  Specify invoking on the trailing edge of the timeout.\n\t * @returns {Function} Returns the new debounced function.\n\t * @example\n\t *\n\t * // Avoid costly calculations while the window size is in flux.\n\t * jQuery(window).on(&#39;resize&#39;, _.debounce(calculateLayout, 150));\n\t *\n\t * // Invoke `sendMail` when clicked, debouncing subsequent calls.\n\t * jQuery(element).on(&#39;click&#39;, _.debounce(sendMail, 300, {\n\t *   &#39;leading&#39;: true,\n\t *   &#39;trailing&#39;: false\n\t * }));\n\t *\n\t * // Ensure `batchLog` is invoked once after 1 second of debounced calls.\n\t * var debounced = _.debounce(batchLog, 250, { &#39;maxWait&#39;: 1000 });\n\t * var source = new EventSource(&#39;/stream&#39;);\n\t * jQuery(source).on(&#39;message&#39;, debounced);\n\t *\n\t * // Cancel the trailing debounced invocation.\n\t * jQuery(window).on(&#39;popstate&#39;, debounced.cancel);\n\t */\n\tfunction debounce(func, wait, options) {\n\t  var lastArgs,\n\t      lastThis,\n\t      maxWait,\n\t      result,\n\t      timerId,\n\t      lastCallTime = 0,\n\t      lastInvokeTime = 0,\n\t      leading = false,\n\t      maxing = false,\n\t      trailing = true;\n\t\n\t  if (typeof func != &#39;function&#39;) {\n\t    throw new TypeError(FUNC_ERROR_TEXT);\n\t  }\n\t  wait = toNumber(wait) || 0;\n\t  if (isObject(options)) {\n\t    leading = !!options.leading;\n\t    maxing = &#39;maxWait&#39; in options;\n\t    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;\n\t    trailing = &#39;trailing&#39; in options ? !!options.trailing : trailing;\n\t  }\n\t\n\t  function invokeFunc(time) {\n\t    var args = lastArgs,\n\t        thisArg = lastThis;\n\t\n\t    lastArgs = lastThis = undefined;\n\t    lastInvokeTime = time;\n\t    result = func.apply(thisArg, args);\n\t    return result;\n\t  }\n\t\n\t  function leadingEdge(time) {\n\t    // Reset any `maxWait` timer.\n\t    lastInvokeTime = time;\n\t    // Start the timer for the trailing edge.\n\t    timerId = setTimeout(timerExpired, wait);\n\t    // Invoke the leading edge.\n\t    return leading ? invokeFunc(time) : result;\n\t  }\n\t\n\t  function remainingWait(time) {\n\t    var timeSinceLastCall = time - lastCallTime,\n\t        timeSinceLastInvoke = time - lastInvokeTime,\n\t        result = wait - timeSinceLastCall;\n\t\n\t    return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;\n\t  }\n\t\n\t  function shouldInvoke(time) {\n\t    var timeSinceLastCall = time - lastCallTime,\n\t        timeSinceLastInvoke = time - lastInvokeTime;\n\t\n\t    // Either this is the first call, activity has stopped and we&#39;re at the\n\t    // trailing edge, the system time has gone backwards and we&#39;re treating\n\t    // it as the trailing edge, or we&#39;ve hit the `maxWait` limit.\n\t    return !lastCallTime || timeSinceLastCall &gt;= wait || timeSinceLastCall &lt; 0 || maxing &amp;&amp; timeSinceLastInvoke &gt;= maxWait;\n\t  }\n\t\n\t  function timerExpired() {\n\t    var time = now();\n\t    if (shouldInvoke(time)) {\n\t      return trailingEdge(time);\n\t    }\n\t    // Restart the timer.\n\t    timerId = setTimeout(timerExpired, remainingWait(time));\n\t  }\n\t\n\t  function trailingEdge(time) {\n\t    clearTimeout(timerId);\n\t    timerId = undefined;\n\t\n\t    // Only invoke if we have `lastArgs` which means `func` has been\n\t    // debounced at least once.\n\t    if (trailing &amp;&amp; lastArgs) {\n\t      return invokeFunc(time);\n\t    }\n\t    lastArgs = lastThis = undefined;\n\t    return result;\n\t  }\n\t\n\t  function cancel() {\n\t    if (timerId !== undefined) {\n\t      clearTimeout(timerId);\n\t    }\n\t    lastCallTime = lastInvokeTime = 0;\n\t    lastArgs = lastThis = timerId = undefined;\n\t  }\n\t\n\t  function flush() {\n\t    return timerId === undefined ? result : trailingEdge(now());\n\t  }\n\t\n\t  function debounced() {\n\t    var time = now(),\n\t        isInvoking = shouldInvoke(time);\n\t\n\t    lastArgs = arguments;\n\t    lastThis = this;\n\t    lastCallTime = time;\n\t\n\t    if (isInvoking) {\n\t      if (timerId === undefined) {\n\t        return leadingEdge(lastCallTime);\n\t      }\n\t      if (maxing) {\n\t        // Handle invocations in a tight loop.\n\t        clearTimeout(timerId);\n\t        timerId = setTimeout(timerExpired, wait);\n\t        return invokeFunc(lastCallTime);\n\t      }\n\t    }\n\t    if (timerId === undefined) {\n\t      timerId = setTimeout(timerExpired, wait);\n\t    }\n\t    return result;\n\t  }\n\t  debounced.cancel = cancel;\n\t  debounced.flush = flush;\n\t  return debounced;\n\t}\n\t\n\t/**\n\t * Checks if `value` is classified as a `Function` object.\n\t *\n\t * @static\n\t * @memberOf _\n\t * @since 0.1.0\n\t * @category Lang\n\t * @param {*} value The value to check.\n\t * @returns {boolean} Returns `true` if `value` is correctly classified,\n\t *  else `false`.\n\t * @example\n\t *\n\t * _.isFunction(_);\n\t * // =&gt; true\n\t *\n\t * _.isFunction(/abc/);\n\t * // =&gt; false\n\t */\n\tfunction isFunction(value) {\n\t  // The use of `Object#toString` avoids issues with the `typeof` operator\n\t  // in Safari 8 which returns &#39;object&#39; for typed array and weak map constructors,\n\t  // and PhantomJS 1.9 which returns &#39;function&#39; for `NodeList` instances.\n\t  var tag = isObject(value) ? objectToString.call(value) : &#39;&#39;;\n\t  return tag == funcTag || tag == genTag;\n\t}\n\t\n\t/**\n\t * Checks if `value` is the\n\t * [language type](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types)\n\t * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String(&#39;&#39;)`)\n\t *\n\t * @static\n\t * @memberOf _\n\t * @since 0.1.0\n\t * @category Lang\n\t * @param {*} value The value to check.\n\t * @returns {boolean} Returns `true` if `value` is an object, else `false`.\n\t * @example\n\t *\n\t * _.isObject({});\n\t * // =&gt; true\n\t *\n\t * _.isObject([1, 2, 3]);\n\t * // =&gt; true\n\t *\n\t * _.isObject(_.noop);\n\t * // =&gt; true\n\t *\n\t * _.isObject(null);\n\t * // =&gt; false\n\t */\n\tfunction isObject(value) {\n\t  var type = typeof value === &#39;undefined&#39; ? &#39;undefined&#39; : _typeof(value);\n\t  return !!value &amp;&amp; (type == &#39;object&#39; || type == &#39;function&#39;);\n\t}\n\t\n\t/**\n\t * Checks if `value` is object-like. A value is object-like if it&#39;s not `null`\n\t * and has a `typeof` result of \&quot;object\&quot;.\n\t *\n\t * @static\n\t * @memberOf _\n\t * @since 4.0.0\n\t * @category Lang\n\t * @param {*} value The value to check.\n\t * @returns {boolean} Returns `true` if `value` is object-like, else `false`.\n\t * @example\n\t *\n\t * _.isObjectLike({});\n\t * // =&gt; true\n\t *\n\t * _.isObjectLike([1, 2, 3]);\n\t * // =&gt; true\n\t *\n\t * _.isObjectLike(_.noop);\n\t * // =&gt; false\n\t *\n\t * _.isObjectLike(null);\n\t * // =&gt; false\n\t */\n\tfunction isObjectLike(value) {\n\t  return !!value &amp;&amp; (typeof value === &#39;undefined&#39; ? &#39;undefined&#39; : _typeof(value)) == &#39;object&#39;;\n\t}\n\t\n\t/**\n\t * Checks if `value` is classified as a `Symbol` primitive or object.\n\t *\n\t * @static\n\t * @memberOf _\n\t * @since 4.0.0\n\t * @category Lang\n\t * @param {*} value The value to check.\n\t * @returns {boolean} Returns `true` if `value` is correctly classified,\n\t *  else `false`.\n\t * @example\n\t *\n\t * _.isSymbol(Symbol.iterator);\n\t * // =&gt; true\n\t *\n\t * _.isSymbol(&#39;abc&#39;);\n\t * // =&gt; false\n\t */\n\tfunction isSymbol(value) {\n\t  return (typeof value === &#39;undefined&#39; ? &#39;undefined&#39; : _typeof(value)) == &#39;symbol&#39; || isObjectLike(value) &amp;&amp; objectToString.call(value) == symbolTag;\n\t}\n\t\n\t/**\n\t * Converts `value` to a number.\n\t *\n\t * @static\n\t * @memberOf _\n\t * @since 4.0.0\n\t * @category Lang\n\t * @param {*} value The value to process.\n\t * @returns {number} Returns the number.\n\t * @example\n\t *\n\t * _.toNumber(3);\n\t * // =&gt; 3\n\t *\n\t * _.toNumber(Number.MIN_VALUE);\n\t * // =&gt; 5e-324\n\t *\n\t * _.toNumber(Infinity);\n\t * // =&gt; Infinity\n\t *\n\t * _.toNumber(&#39;3&#39;);\n\t * // =&gt; 3\n\t */\n\tfunction toNumber(value) {\n\t  if (typeof value == &#39;number&#39;) {\n\t    return value;\n\t  }\n\t  if (isSymbol(value)) {\n\t    return NAN;\n\t  }\n\t  if (isObject(value)) {\n\t    var other = isFunction(value.valueOf) ? value.valueOf() : value;\n\t    value = isObject(other) ? other + &#39;&#39; : other;\n\t  }\n\t  if (typeof value != &#39;string&#39;) {\n\t    return value === 0 ? value : +value;\n\t  }\n\t  value = value.replace(reTrim, &#39;&#39;);\n\t  var isBinary = reIsBinary.test(value);\n\t  return isBinary || reIsOctal.test(value) ? freeParseInt(value.slice(2), isBinary ? 2 : 8) : reIsBadHex.test(value) ? NAN : +value;\n\t}\n\t\n\tmodule.exports = debounce;\n\n/***/ },\n/* 7 */\n/***/ function(module, exports) {\n\n\t\&quot;use strict\&quot;;\n\t\n\tObject.defineProperty(exports, \&quot;__esModule\&quot;, {\n\t  value: true\n\t});\n\tvar doc = window.document;\n\tvar MutationObserver = window.MutationObserver || window.WebKitMutationObserver;\n\t\n\tvar listeners = [];\n\tvar observer = void 0;\n\t\n\tfunction ready(selector, fn) {\n\t  // Store the selector and callback to be monitored\n\t  listeners.push({\n\t    selector: selector,\n\t    fn: fn\n\t  });\n\t\n\t  if (!observer &amp;&amp; MutationObserver) {\n\t    // Watch for changes in the document\n\t    observer = new MutationObserver(check);\n\t    observer.observe(doc.documentElement, {\n\t      childList: true,\n\t      subtree: true,\n\t      removedNodes: true\n\t    });\n\t  }\n\t  // Check if the element is currently in the DOM\n\t  check();\n\t}\n\t\n\tfunction check() {\n\t  // Check the DOM for elements matching a stored selector\n\t  for (var i = 0, len = listeners.length, listener, elements; i &lt; len; i++) {\n\t    listener = listeners[i];\n\t    // Query for elements matching the specified selector\n\t    elements = doc.querySelectorAll(listener.selector);\n\t    for (var j = 0, jLen = elements.length, element; j &lt; jLen; j++) {\n\t      element = elements[j];\n\t      // Make sure the callback isn&#39;t invoked with the\n\t      // same element more than once\n\t      if (!element.ready) {\n\t        element.ready = true;\n\t        // Invoke the callback with the element\n\t        listener.fn.call(element, element);\n\t      }\n\t    }\n\t  }\n\t}\n\t\n\texports.default = ready;\n\n/***/ },\n/* 8 */\n/***/ function(module, exports) {\n\n\t\&quot;use strict\&quot;;\n\t\n\tObject.defineProperty(exports, \&quot;__esModule\&quot;, {\n\t  value: true\n\t});\n\t\n\tvar _createClass = function () { function defineProperties(target, props) { for (var i = 0; i &lt; props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if (\&quot;value\&quot; in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();\n\t\n\tfunction _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError(\&quot;Cannot call a class as a function\&quot;); } }\n\t\n\t/**\n\t * Device detector\n\t */\n\t\n\tvar Detector = function () {\n\t  function Detector() {\n\t    _classCallCheck(this, Detector);\n\t  }\n\t\n\t  _createClass(Detector, [{\n\t    key: \&quot;phone\&quot;,\n\t    value: function phone() {\n\t      var check = false;\n\t      (function (a) {\n\t        if (/(android|bb\\d+|meego).+mobile|avantgo|bada\\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\\-(n|u)|c55\\/|capi|ccwa|cdm\\-|cell|chtm|cldc|cmd\\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\\-s|devi|dica|dmob|do(c|p)o|ds(12|\\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\\-|_)|g1 u|g560|gene|gf\\-5|g\\-mo|go(\\.w|od)|gr(ad|un)|haie|hcit|hd\\-(m|p|t)|hei\\-|hi(pt|ta)|hp( i|ip)|hs\\-c|ht(c(\\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\\-(20|go|ma)|i230|iac( |\\-|\\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\\/)|klon|kpt |kwc\\-|kyo(c|k)|le(no|xi)|lg( g|\\/(k|l|u)|50|54|\\-[a-w])|libw|lynx|m1\\-w|m3ga|m50\\/|ma(te|ui|xo)|mc(01|21|ca)|m\\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\\-2|po(ck|rt|se)|prox|psio|pt\\-g|qa\\-a|qc(07|12|21|32|60|\\-[2-7]|i\\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\\-|oo|p\\-)|sdk\\/|se(c(\\-|0|1)|47|mc|nd|ri)|sgh\\-|shar|sie(\\-|m)|sk\\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\\-|v\\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\\-|tdg\\-|tel(i|m)|tim\\-|t\\-mo|to(pl|sh)|ts(70|m\\-|m3|m5)|tx\\-9|up(\\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\\-|your|zeto|zte\\-/i.test(a.substr(0, 4))) check = true;\n\t      })(navigator.userAgent || navigator.vendor || window.opera);\n\t      return check;\n\t    }\n\t  }, {\n\t    key: \&quot;mobile\&quot;,\n\t    value: function mobile() {\n\t      var check = false;\n\t      (function (a) {\n\t        if (/(android|bb\\d+|meego).+mobile|avantgo|bada\\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\\-(n|u)|c55\\/|capi|ccwa|cdm\\-|cell|chtm|cldc|cmd\\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\\-s|devi|dica|dmob|do(c|p)o|ds(12|\\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\\-|_)|g1 u|g560|gene|gf\\-5|g\\-mo|go(\\.w|od)|gr(ad|un)|haie|hcit|hd\\-(m|p|t)|hei\\-|hi(pt|ta)|hp( i|ip)|hs\\-c|ht(c(\\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\\-(20|go|ma)|i230|iac( |\\-|\\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\\/)|klon|kpt |kwc\\-|kyo(c|k)|le(no|xi)|lg( g|\\/(k|l|u)|50|54|\\-[a-w])|libw|lynx|m1\\-w|m3ga|m50\\/|ma(te|ui|xo)|mc(01|21|ca)|m\\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\\-2|po(ck|rt|se)|prox|psio|pt\\-g|qa\\-a|qc(07|12|21|32|60|\\-[2-7]|i\\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\\-|oo|p\\-)|sdk\\/|se(c(\\-|0|1)|47|mc|nd|ri)|sgh\\-|shar|sie(\\-|m)|sk\\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\\-|v\\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\\-|tdg\\-|tel(i|m)|tim\\-|t\\-mo|to(pl|sh)|ts(70|m\\-|m3|m5)|tx\\-9|up(\\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\\-|your|zeto|zte\\-/i.test(a.substr(0, 4))) check = true;\n\t      })(navigator.userAgent || navigator.vendor || window.opera);\n\t      return check;\n\t    }\n\t  }, {\n\t    key: \&quot;tablet\&quot;,\n\t    value: function tablet() {\n\t      return this.mobile() &amp;&amp; !this.phone();\n\t    }\n\t  }]);\n\t\n\t  return Detector;\n\t}();\n\t\n\t;\n\t\n\texports.default = new Detector();\n\n/***/ },\n/* 9 */\n/***/ function(module, exports) {\n\n\t&#39;use strict&#39;;\n\t\n\tObject.defineProperty(exports, \&quot;__esModule\&quot;, {\n\t  value: true\n\t});\n\t/**\n\t * Set or remove aos-animate class\n\t * @param {node} el         element\n\t * @param {int}  top        scrolled distance\n\t * @param {void} once\n\t */\n\tvar setState = function setState(el, top, once) {\n\t  var attrOnce = el.node.getAttribute(&#39;data-aos-once&#39;);\n\t\n\t  if (top &gt; el.position) {\n\t    el.node.classList.add(&#39;aos-animate&#39;);\n\t  } else if (typeof attrOnce !== &#39;undefined&#39;) {\n\t    if (attrOnce === &#39;false&#39; || !once &amp;&amp; attrOnce !== &#39;true&#39;) {\n\t      el.node.classList.remove(&#39;aos-animate&#39;);\n\t    }\n\t  }\n\t};\n\t\n\t/**\n\t * Scroll logic - add or remove &#39;aos-animate&#39; class on scroll\n\t *\n\t * @param  {array} $elements         array of elements nodes\n\t * @param  {bool} once               plugin option\n\t * @return {void}\n\t */\n\tvar handleScroll = function handleScroll($elements, once) {\n\t  var scrollTop = window.pageYOffset;\n\t  var windowHeight = window.innerHeight;\n\t  /**\n\t   * Check all registered elements positions\n\t   * and animate them on scroll\n\t   */\n\t  $elements.forEach(function (el, i) {\n\t    setState(el, windowHeight + scrollTop, once);\n\t  });\n\t};\n\t\n\texports.default = handleScroll;\n\n/***/ },\n/* 10 */\n/***/ function(module, exports, __webpack_require__) {\n\n\t&#39;use strict&#39;;\n\t\n\tObject.defineProperty(exports, \&quot;__esModule\&quot;, {\n\t  value: true\n\t});\n\t\n\tvar _calculateOffset = __webpack_require__(11);\n\t\n\tvar _calculateOffset2 = _interopRequireDefault(_calculateOffset);\n\t\n\tfunction _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }\n\t\n\tvar prepare = function prepare($elements, options) {\n\t  $elements.forEach(function (el, i) {\n\t    el.node.classList.add(&#39;aos-init&#39;);\n\t    el.position = (0, _calculateOffset2.default)(el.node, options.offset);\n\t  });\n\t  return $elements;\n\t}; /* Clearing variables */\n\t\n\texports.default = prepare;\n\n/***/ },\n/* 11 */\n/***/ function(module, exports, __webpack_require__) {\n\n\t&#39;use strict&#39;;\n\t\n\tObject.defineProperty(exports, \&quot;__esModule\&quot;, {\n\t  value: true\n\t});\n\t\n\tvar _offset = __webpack_require__(12);\n\t\n\tvar _offset2 = _interopRequireDefault(_offset);\n\t\n\tfunction _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? obj : { default: obj }; }\n\t\n\tvar calculateOffset = function calculateOffset(el, optionalOffset) {\n\t  var elementOffsetTop = 0;\n\t  var additionalOffset = 0;\n\t  var windowHeight = window.innerHeight;\n\t  var attrs = {\n\t    offset: el.getAttribute(&#39;data-aos-offset&#39;),\n\t    anchor: el.getAttribute(&#39;data-aos-anchor&#39;),\n\t    anchorPlacement: el.getAttribute(&#39;data-aos-anchor-placement&#39;)\n\t  };\n\t\n\t  if (attrs.offset &amp;&amp; !isNaN(attrs.offset)) {\n\t    additionalOffset = parseInt(attrs.offset);\n\t  }\n\t\n\t  if (attrs.anchor &amp;&amp; document.querySelectorAll(attrs.anchor)) {\n\t    el = document.querySelectorAll(attrs.anchor)[0];\n\t  }\n\t\n\t  elementOffsetTop = (0, _offset2.default)(el).top;\n\t\n\t  switch (attrs.anchorPlacement) {\n\t    case &#39;top-bottom&#39;:\n\t      // Default offset\n\t      break;\n\t    case &#39;center-bottom&#39;:\n\t      elementOffsetTop += el.offsetHeight / 2;\n\t      break;\n\t    case &#39;bottom-bottom&#39;:\n\t      elementOffsetTop += el.offsetHeight;\n\t      break;\n\t    case &#39;top-center&#39;:\n\t      elementOffsetTop += windowHeight / 2;\n\t      break;\n\t    case &#39;bottom-center&#39;:\n\t      elementOffsetTop += windowHeight / 2 + el.offsetHeight;\n\t      break;\n\t    case &#39;center-center&#39;:\n\t      elementOffsetTop += windowHeight / 2 + el.offsetHeight / 2;\n\t      break;\n\t    case &#39;top-top&#39;:\n\t      elementOffsetTop += windowHeight;\n\t      break;\n\t    case &#39;bottom-top&#39;:\n\t      elementOffsetTop += el.offsetHeight + windowHeight;\n\t      break;\n\t    case &#39;center-top&#39;:\n\t      elementOffsetTop += el.offsetHeight / 2 + windowHeight;\n\t      break;\n\t  }\n\t\n\t  if (!attrs.anchorPlacement &amp;&amp; !attrs.offset &amp;&amp; !isNaN(optionalOffset)) {\n\t    additionalOffset = optionalOffset;\n\t  }\n\t\n\t  return elementOffsetTop + additionalOffset;\n\t}; /**\n\t    * Calculate offset\n\t    * basing on element&#39;s settings like:\n\t    * - anchor\n\t    * - offset\n\t    *\n\t    * @param  {Node} el [Dom element]\n\t    * @return {Integer} [Final offset that will be used to trigger animation in good position]\n\t    */\n\t\n\texports.default = calculateOffset;\n\n/***/ },\n/* 12 */\n/***/ function(module, exports) {\n\n\t&#39;use strict&#39;;\n\t\n\tObject.defineProperty(exports, \&quot;__esModule\&quot;, {\n\t  value: true\n\t});\n\t/**\n\t * Get offset of DOM element Helper\n\t * including these with translation\n\t *\n\t * @param  {Node} el [DOM element]\n\t * @return {Object} [top and left offset]\n\t */\n\tvar offset = function offset(el) {\n\t  var _x = 0;\n\t  var _y = 0;\n\t\n\t  while (el &amp;&amp; !isNaN(el.offsetLeft) &amp;&amp; !isNaN(el.offsetTop)) {\n\t    _x += el.offsetLeft - (el.tagName != &#39;BODY&#39; ? el.scrollLeft : 0);\n\t    _y += el.offsetTop - (el.tagName != &#39;BODY&#39; ? el.scrollTop : 0);\n\t    el = el.offsetParent;\n\t  }\n\t\n\t  return {\n\t    top: _y,\n\t    left: _x\n\t  };\n\t};\n\t\n\texports.default = offset;\n\n/***/ },\n/* 13 */\n/***/ function(module, exports) {\n\n\t&#39;use strict&#39;;\n\t\n\tObject.defineProperty(exports, \&quot;__esModule\&quot;, {\n\t  value: true\n\t});\n\t/**\n\t * Generate initial array with elements as objects\n\t * This array will be extended later with elements attributes values\n\t * like &#39;position&#39;\n\t */\n\tvar createArrayWithElements = function createArrayWithElements(elements) {\n\t  elements = elements || document.querySelectorAll(&#39;[data-aos]&#39;);\n\t  var finalElements = [];\n\t\n\t  [].forEach.call(elements, function (el, i) {\n\t    finalElements.push({\n\t      node: el\n\t    });\n\t  });\n\t\n\t  return finalElements;\n\t};\n\t\n\texports.default = createArrayWithElements;\n\n/***/ }\n/******/ ])\n});\n;\n\n\n/** WEBPACK FOOTER **\n ** aos.js\n **/&quot;,&quot; \t// The module cache\n \tvar installedModules = {};\n\n \t// The require function\n \tfunction __webpack_require__(moduleId) {\n\n \t\t// Check if module is in cache\n \t\tif(installedModules[moduleId])\n \t\t\treturn installedModules[moduleId].exports;\n\n \t\t// Create a new module (and put it into the cache)\n \t\tvar module = installedModules[moduleId] = {\n \t\t\texports: {},\n \t\t\tid: moduleId,\n \t\t\tloaded: false\n \t\t};\n\n \t\t// Execute the module function\n \t\tmodules[moduleId].call(module.exports, module, module.exports, __webpack_require__);\n\n \t\t// Flag the module as loaded\n \t\tmodule.loaded = true;\n\n \t\t// Return the exports of the module\n \t\treturn module.exports;\n \t}\n\n\n \t// expose the modules object (__webpack_modules__)\n \t__webpack_require__.m = modules;\n\n \t// expose the module cache\n \t__webpack_require__.c = installedModules;\n\n \t// __webpack_public_path__\n \t__webpack_require__.p = \&quot;dist/\&quot;;\n\n \t// Load entry module and return exports\n \treturn __webpack_require__(0);\n\n\n\n/** WEBPACK FOOTER **\n ** webpack/bootstrap 9a1cfc5ebe1d35b05a0f\n **/&quot;,&quot;/**\n * *******************************************************\n * AOS (Animate on scroll) - wowjs alternative\n * made to animate elements on scroll in both directions\n * *******************************************************\n */\n\nimport styles from &#39;./../sass/aos.scss&#39;;\n\n// Modules &amp; helpers\nimport throttle from &#39;lodash.throttle&#39;;\nimport debounce from &#39;lodash.debounce&#39;;\n\nimport observe from &#39;./libs/observer&#39;;\n\nimport detect from &#39;./helpers/detector&#39;;\nimport handleScroll from &#39;./helpers/handleScroll&#39;;\nimport prepare from &#39;./helpers/prepare&#39;;\nimport elements from &#39;./helpers/elements&#39;;\n\n/**\n * Private variables\n */\nlet $aosElements = [];\nlet initialized = false;\n\n// Detect not supported browsers (&lt;=IE9)\n// http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805\nconst browserNotSupported = document.all &amp;&amp; !window.atob;\n\n/**\n * Default options\n */\nlet options = {\n  offset: 120,\n  delay: 0,\n  easing: &#39;ease&#39;,\n  duration: 400,\n  disable: false,\n  once: false,\n  startEvent: &#39;DOMContentLoaded&#39;\n};\n\n/**\n * Refresh AOS\n */\nconst refresh = function refresh(initialize = false) {\n  // Allow refresh only when it was first initialized on startEvent\n  if (initialize) initialized = true;\n\n  if (initialized) {\n    // Extend elements objects in $aosElements with their positions\n    $aosElements = prepare($aosElements, options);\n    // Perform scroll event, to refresh view and show/hide elements\n    handleScroll($aosElements, options.once);\n\n    return $aosElements;\n  }\n};\n\n/**\n * Hard refresh\n * create array with new elements and trigger refresh\n */\nconst refreshHard = function refreshHard() {\n  $aosElements = elements();\n  refresh();\n};\n\n/**\n * Disable AOS\n * Remove all attributes to reset applied styles\n */\nconst disable = function() {\n  $aosElements.forEach(function(el, i) {\n    el.node.removeAttribute(&#39;data-aos&#39;);\n    el.node.removeAttribute(&#39;data-aos-easing&#39;);\n    el.node.removeAttribute(&#39;data-aos-duration&#39;);\n    el.node.removeAttribute(&#39;data-aos-delay&#39;);\n  });\n};\n\n\n/**\n * Check if AOS should be disabled based on provided setting\n */\nconst isDisabled = function(optionDisable) {\n  return optionDisable === true ||\n  (optionDisable === &#39;mobile&#39; &amp;&amp; detect.mobile()) ||\n  (optionDisable === &#39;phone&#39; &amp;&amp; detect.phone()) ||\n  (optionDisable === &#39;tablet&#39; &amp;&amp; detect.tablet()) ||\n  (typeof optionDisable === &#39;function&#39; &amp;&amp; optionDisable() === true);\n};\n\n/**\n * Initializing AOS\n * - Create options merging defaults with user defined options\n * - Set attributes on &lt;body&gt; as global setting - css relies on it\n * - Attach preparing elements to options.startEvent,\n *   window resize and orientation change\n * - Attach function that handle scroll and everything connected to it\n *   to window scroll event and fire once document is ready to set initial state\n */\nconst init = function init(settings) {\n  options = Object.assign(options, settings);\n\n  // Create initial array with elements -&gt; to be fullfilled later with prepare()\n  $aosElements = elements();\n\n  /**\n   * Don&#39;t init plugin if option `disable` is set\n   * or when browser is not supported\n   */\n  if (isDisabled(options.disable) || browserNotSupported) {\n    return disable();\n  }\n\n  /**\n   * Set global settings on body, based on options\n   * so CSS can use it\n   */\n  document.querySelector(&#39;body&#39;).setAttribute(&#39;data-aos-easing&#39;, options.easing);\n  document.querySelector(&#39;body&#39;).setAttribute(&#39;data-aos-duration&#39;, options.duration);\n  document.querySelector(&#39;body&#39;).setAttribute(&#39;data-aos-delay&#39;, options.delay);\n\n  /**\n   * Handle initializing\n   */\n  if (options.startEvent === &#39;DOMContentLoaded&#39; &amp;&amp;\n    [&#39;complete&#39;, &#39;interactive&#39;].indexOf(document.readyState) &gt; -1) {\n    // Initialize AOS if default startEvent was already fired\n    refresh(true);\n  } else if (options.startEvent === &#39;load&#39;) {\n    // If start event is &#39;Load&#39; - attach listener to window\n    window.addEventListener(options.startEvent, function() {\n      refresh(true);\n    });\n  } else {\n    // Listen to options.startEvent and initialize AOS\n    document.addEventListener(options.startEvent, function() {\n      refresh(true);\n    });\n  }\n\n  /**\n   * Refresh plugin on window resize or orientation change\n   */\n  window.addEventListener(&#39;resize&#39;, debounce(refresh, 50, true));\n  window.addEventListener(&#39;orientationchange&#39;, debounce(refresh, 50, true));\n\n  /**\n   * Handle scroll event to animate elements on scroll\n   */\n  window.addEventListener(&#39;scroll&#39;, throttle(() =&gt; {\n    handleScroll($aosElements, options.once);\n  }, 99));\n\n  /**\n   * Watch if nodes are removed\n   * If so refresh plugin\n   */\n  document.addEventListener(&#39;DOMNodeRemoved&#39;, (event) =&gt; {\n    const el = event.target;\n    if (el &amp;&amp; el.nodeType === 1 &amp;&amp; el.hasAttribute &amp;&amp; el.hasAttribute(&#39;data-aos&#39;)) {\n      debounce(refreshHard, 50, true)\n    }\n  });\n\n  /**\n   * Observe [aos] elements\n   * If something is loaded by AJAX\n   * it&#39;ll refresh plugin automatically\n   */\n  observe(&#39;[data-aos]&#39;, refreshHard);\n\n  return $aosElements;\n};\n\n/**\n * Export Public API\n */\n\nmodule.exports = {\n  init,\n  refresh,\n  refreshHard\n};\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/aos.js\n **/&quot;,&quot;/**\n * lodash 4.0.1 (Custom Build) &lt;https://lodash.com/&gt;\n * Build: `lodash modularize exports=\&quot;npm\&quot; -o ./`\n * Copyright 2012-2016 The Dojo Foundation &lt;http://dojofoundation.org/&gt;\n * Based on Underscore.js 1.8.3 &lt;http://underscorejs.org/LICENSE&gt;\n * Copyright 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative Reporters &amp; Editors\n * Available under MIT license &lt;https://lodash.com/license&gt;\n */\nvar debounce = require(&#39;lodash.debounce&#39;);\n\n/** Used as the `TypeError` message for \&quot;Functions\&quot; methods. */\nvar FUNC_ERROR_TEXT = &#39;Expected a function&#39;;\n\n/**\n * Creates a throttled function that only invokes `func` at most once per\n * every `wait` milliseconds. The throttled function comes with a `cancel`\n * method to cancel delayed `func` invocations and a `flush` method to\n * immediately invoke them. Provide an options object to indicate whether\n * `func` should be invoked on the leading and/or trailing edge of the `wait`\n * timeout. The `func` is invoked with the last arguments provided to the\n * throttled function. Subsequent calls to the throttled function return the\n * result of the last `func` invocation.\n *\n * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked\n * on the trailing edge of the timeout only if the throttled function is\n * invoked more than once during the `wait` timeout.\n *\n * See [David Corbacho&#39;s article](http://drupalmotion.com/article/debounce-and-throttle-visual-explanation)\n * for details over the differences between `_.throttle` and `_.debounce`.\n *\n * @static\n * @memberOf _\n * @category Function\n * @param {Function} func The function to throttle.\n * @param {number} [wait=0] The number of milliseconds to throttle invocations to.\n * @param {Object} [options] The options object.\n * @param {boolean} [options.leading=true] Specify invoking on the leading\n *  edge of the timeout.\n * @param {boolean} [options.trailing=true] Specify invoking on the trailing\n *  edge of the timeout.\n * @returns {Function} Returns the new throttled function.\n * @example\n *\n * // Avoid excessively updating the position while scrolling.\n * jQuery(window).on(&#39;scroll&#39;, _.throttle(updatePosition, 100));\n *\n * // Invoke `renewToken` when the click event is fired, but not more than once every 5 minutes.\n * var throttled = _.throttle(renewToken, 300000, { &#39;trailing&#39;: false });\n * jQuery(element).on(&#39;click&#39;, throttled);\n *\n * // Cancel the trailing throttled invocation.\n * jQuery(window).on(&#39;popstate&#39;, throttled.cancel);\n */\nfunction throttle(func, wait, options) {\n  var leading = true,\n      trailing = true;\n\n  if (typeof func != &#39;function&#39;) {\n    throw new TypeError(FUNC_ERROR_TEXT);\n  }\n  if (isObject(options)) {\n    leading = &#39;leading&#39; in options ? !!options.leading : leading;\n    trailing = &#39;trailing&#39; in options ? !!options.trailing : trailing;\n  }\n  return debounce(func, wait, {\n    &#39;leading&#39;: leading,\n    &#39;maxWait&#39;: wait,\n    &#39;trailing&#39;: trailing\n  });\n}\n\n/**\n * Checks if `value` is the [language type](https://es5.github.io/#x8) of `Object`.\n * (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String(&#39;&#39;)`)\n *\n * @static\n * @memberOf _\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is an object, else `false`.\n * @example\n *\n * _.isObject({});\n * // =&gt; true\n *\n * _.isObject([1, 2, 3]);\n * // =&gt; true\n *\n * _.isObject(_.noop);\n * // =&gt; true\n *\n * _.isObject(null);\n * // =&gt; false\n */\nfunction isObject(value) {\n  var type = typeof value;\n  return !!value &amp;&amp; (type == &#39;object&#39; || type == &#39;function&#39;);\n}\n\nmodule.exports = throttle;\n\n\n\n/** WEBPACK FOOTER **\n ** ./~/lodash.throttle/index.js\n **/&quot;,&quot;/**\n * lodash 4.0.6 (Custom Build) &lt;https://lodash.com/&gt;\n * Build: `lodash modularize exports=\&quot;npm\&quot; -o ./`\n * Copyright jQuery Foundation and other contributors &lt;https://jquery.org/&gt;\n * Released under MIT license &lt;https://lodash.com/license&gt;\n * Based on Underscore.js 1.8.3 &lt;http://underscorejs.org/LICENSE&gt;\n * Copyright Jeremy Ashkenas, DocumentCloud and Investigative Reporters &amp; Editors\n */\n\n/** Used as the `TypeError` message for \&quot;Functions\&quot; methods. */\nvar FUNC_ERROR_TEXT = &#39;Expected a function&#39;;\n\n/** Used as references for various `Number` constants. */\nvar NAN = 0 / 0;\n\n/** `Object#toString` result references. */\nvar funcTag = &#39;[object Function]&#39;,\n    genTag = &#39;[object GeneratorFunction]&#39;,\n    symbolTag = &#39;[object Symbol]&#39;;\n\n/** Used to match leading and trailing whitespace. */\nvar reTrim = /^\\s+|\\s+$/g;\n\n/** Used to detect bad signed hexadecimal string values. */\nvar reIsBadHex = /^[-+]0x[0-9a-f]+$/i;\n\n/** Used to detect binary string values. */\nvar reIsBinary = /^0b[01]+$/i;\n\n/** Used to detect octal string values. */\nvar reIsOctal = /^0o[0-7]+$/i;\n\n/** Built-in method references without a dependency on `root`. */\nvar freeParseInt = parseInt;\n\n/** Used for built-in method references. */\nvar objectProto = Object.prototype;\n\n/**\n * Used to resolve the\n * [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)\n * of values.\n */\nvar objectToString = objectProto.toString;\n\n/* Built-in method references for those with the same name as other `lodash` methods. */\nvar nativeMax = Math.max,\n    nativeMin = Math.min;\n\n/**\n * Gets the timestamp of the number of milliseconds that have elapsed since\n * the Unix epoch (1 January 1970 00:00:00 UTC).\n *\n * @static\n * @memberOf _\n * @since 2.4.0\n * @type {Function}\n * @category Date\n * @returns {number} Returns the timestamp.\n * @example\n *\n * _.defer(function(stamp) {\n *   console.log(_.now() - stamp);\n * }, _.now());\n * // =&gt; Logs the number of milliseconds it took for the deferred function to be invoked.\n */\nvar now = Date.now;\n\n/**\n * Creates a debounced function that delays invoking `func` until after `wait`\n * milliseconds have elapsed since the last time the debounced function was\n * invoked. The debounced function comes with a `cancel` method to cancel\n * delayed `func` invocations and a `flush` method to immediately invoke them.\n * Provide an options object to indicate whether `func` should be invoked on\n * the leading and/or trailing edge of the `wait` timeout. The `func` is invoked\n * with the last arguments provided to the debounced function. Subsequent calls\n * to the debounced function return the result of the last `func` invocation.\n *\n * **Note:** If `leading` and `trailing` options are `true`, `func` is invoked\n * on the trailing edge of the timeout only if the debounced function is\n * invoked more than once during the `wait` timeout.\n *\n * See [David Corbacho&#39;s article](https://css-tricks.com/debouncing-throttling-explained-examples/)\n * for details over the differences between `_.debounce` and `_.throttle`.\n *\n * @static\n * @memberOf _\n * @since 0.1.0\n * @category Function\n * @param {Function} func The function to debounce.\n * @param {number} [wait=0] The number of milliseconds to delay.\n * @param {Object} [options={}] The options object.\n * @param {boolean} [options.leading=false]\n *  Specify invoking on the leading edge of the timeout.\n * @param {number} [options.maxWait]\n *  The maximum time `func` is allowed to be delayed before it&#39;s invoked.\n * @param {boolean} [options.trailing=true]\n *  Specify invoking on the trailing edge of the timeout.\n * @returns {Function} Returns the new debounced function.\n * @example\n *\n * // Avoid costly calculations while the window size is in flux.\n * jQuery(window).on(&#39;resize&#39;, _.debounce(calculateLayout, 150));\n *\n * // Invoke `sendMail` when clicked, debouncing subsequent calls.\n * jQuery(element).on(&#39;click&#39;, _.debounce(sendMail, 300, {\n *   &#39;leading&#39;: true,\n *   &#39;trailing&#39;: false\n * }));\n *\n * // Ensure `batchLog` is invoked once after 1 second of debounced calls.\n * var debounced = _.debounce(batchLog, 250, { &#39;maxWait&#39;: 1000 });\n * var source = new EventSource(&#39;/stream&#39;);\n * jQuery(source).on(&#39;message&#39;, debounced);\n *\n * // Cancel the trailing debounced invocation.\n * jQuery(window).on(&#39;popstate&#39;, debounced.cancel);\n */\nfunction debounce(func, wait, options) {\n  var lastArgs,\n      lastThis,\n      maxWait,\n      result,\n      timerId,\n      lastCallTime = 0,\n      lastInvokeTime = 0,\n      leading = false,\n      maxing = false,\n      trailing = true;\n\n  if (typeof func != &#39;function&#39;) {\n    throw new TypeError(FUNC_ERROR_TEXT);\n  }\n  wait = toNumber(wait) || 0;\n  if (isObject(options)) {\n    leading = !!options.leading;\n    maxing = &#39;maxWait&#39; in options;\n    maxWait = maxing ? nativeMax(toNumber(options.maxWait) || 0, wait) : maxWait;\n    trailing = &#39;trailing&#39; in options ? !!options.trailing : trailing;\n  }\n\n  function invokeFunc(time) {\n    var args = lastArgs,\n        thisArg = lastThis;\n\n    lastArgs = lastThis = undefined;\n    lastInvokeTime = time;\n    result = func.apply(thisArg, args);\n    return result;\n  }\n\n  function leadingEdge(time) {\n    // Reset any `maxWait` timer.\n    lastInvokeTime = time;\n    // Start the timer for the trailing edge.\n    timerId = setTimeout(timerExpired, wait);\n    // Invoke the leading edge.\n    return leading ? invokeFunc(time) : result;\n  }\n\n  function remainingWait(time) {\n    var timeSinceLastCall = time - lastCallTime,\n        timeSinceLastInvoke = time - lastInvokeTime,\n        result = wait - timeSinceLastCall;\n\n    return maxing ? nativeMin(result, maxWait - timeSinceLastInvoke) : result;\n  }\n\n  function shouldInvoke(time) {\n    var timeSinceLastCall = time - lastCallTime,\n        timeSinceLastInvoke = time - lastInvokeTime;\n\n    // Either this is the first call, activity has stopped and we&#39;re at the\n    // trailing edge, the system time has gone backwards and we&#39;re treating\n    // it as the trailing edge, or we&#39;ve hit the `maxWait` limit.\n    return (!lastCallTime || (timeSinceLastCall &gt;= wait) ||\n      (timeSinceLastCall &lt; 0) || (maxing &amp;&amp; timeSinceLastInvoke &gt;= maxWait));\n  }\n\n  function timerExpired() {\n    var time = now();\n    if (shouldInvoke(time)) {\n      return trailingEdge(time);\n    }\n    // Restart the timer.\n    timerId = setTimeout(timerExpired, remainingWait(time));\n  }\n\n  function trailingEdge(time) {\n    clearTimeout(timerId);\n    timerId = undefined;\n\n    // Only invoke if we have `lastArgs` which means `func` has been\n    // debounced at least once.\n    if (trailing &amp;&amp; lastArgs) {\n      return invokeFunc(time);\n    }\n    lastArgs = lastThis = undefined;\n    return result;\n  }\n\n  function cancel() {\n    if (timerId !== undefined) {\n      clearTimeout(timerId);\n    }\n    lastCallTime = lastInvokeTime = 0;\n    lastArgs = lastThis = timerId = undefined;\n  }\n\n  function flush() {\n    return timerId === undefined ? result : trailingEdge(now());\n  }\n\n  function debounced() {\n    var time = now(),\n        isInvoking = shouldInvoke(time);\n\n    lastArgs = arguments;\n    lastThis = this;\n    lastCallTime = time;\n\n    if (isInvoking) {\n      if (timerId === undefined) {\n        return leadingEdge(lastCallTime);\n      }\n      if (maxing) {\n        // Handle invocations in a tight loop.\n        clearTimeout(timerId);\n        timerId = setTimeout(timerExpired, wait);\n        return invokeFunc(lastCallTime);\n      }\n    }\n    if (timerId === undefined) {\n      timerId = setTimeout(timerExpired, wait);\n    }\n    return result;\n  }\n  debounced.cancel = cancel;\n  debounced.flush = flush;\n  return debounced;\n}\n\n/**\n * Checks if `value` is classified as a `Function` object.\n *\n * @static\n * @memberOf _\n * @since 0.1.0\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is correctly classified,\n *  else `false`.\n * @example\n *\n * _.isFunction(_);\n * // =&gt; true\n *\n * _.isFunction(/abc/);\n * // =&gt; false\n */\nfunction isFunction(value) {\n  // The use of `Object#toString` avoids issues with the `typeof` operator\n  // in Safari 8 which returns &#39;object&#39; for typed array and weak map constructors,\n  // and PhantomJS 1.9 which returns &#39;function&#39; for `NodeList` instances.\n  var tag = isObject(value) ? objectToString.call(value) : &#39;&#39;;\n  return tag == funcTag || tag == genTag;\n}\n\n/**\n * Checks if `value` is the\n * [language type](http://www.ecma-international.org/ecma-262/6.0/#sec-ecmascript-language-types)\n * of `Object`. (e.g. arrays, functions, objects, regexes, `new Number(0)`, and `new String(&#39;&#39;)`)\n *\n * @static\n * @memberOf _\n * @since 0.1.0\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is an object, else `false`.\n * @example\n *\n * _.isObject({});\n * // =&gt; true\n *\n * _.isObject([1, 2, 3]);\n * // =&gt; true\n *\n * _.isObject(_.noop);\n * // =&gt; true\n *\n * _.isObject(null);\n * // =&gt; false\n */\nfunction isObject(value) {\n  var type = typeof value;\n  return !!value &amp;&amp; (type == &#39;object&#39; || type == &#39;function&#39;);\n}\n\n/**\n * Checks if `value` is object-like. A value is object-like if it&#39;s not `null`\n * and has a `typeof` result of \&quot;object\&quot;.\n *\n * @static\n * @memberOf _\n * @since 4.0.0\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is object-like, else `false`.\n * @example\n *\n * _.isObjectLike({});\n * // =&gt; true\n *\n * _.isObjectLike([1, 2, 3]);\n * // =&gt; true\n *\n * _.isObjectLike(_.noop);\n * // =&gt; false\n *\n * _.isObjectLike(null);\n * // =&gt; false\n */\nfunction isObjectLike(value) {\n  return !!value &amp;&amp; typeof value == &#39;object&#39;;\n}\n\n/**\n * Checks if `value` is classified as a `Symbol` primitive or object.\n *\n * @static\n * @memberOf _\n * @since 4.0.0\n * @category Lang\n * @param {*} value The value to check.\n * @returns {boolean} Returns `true` if `value` is correctly classified,\n *  else `false`.\n * @example\n *\n * _.isSymbol(Symbol.iterator);\n * // =&gt; true\n *\n * _.isSymbol(&#39;abc&#39;);\n * // =&gt; false\n */\nfunction isSymbol(value) {\n  return typeof value == &#39;symbol&#39; ||\n    (isObjectLike(value) &amp;&amp; objectToString.call(value) == symbolTag);\n}\n\n/**\n * Converts `value` to a number.\n *\n * @static\n * @memberOf _\n * @since 4.0.0\n * @category Lang\n * @param {*} value The value to process.\n * @returns {number} Returns the number.\n * @example\n *\n * _.toNumber(3);\n * // =&gt; 3\n *\n * _.toNumber(Number.MIN_VALUE);\n * // =&gt; 5e-324\n *\n * _.toNumber(Infinity);\n * // =&gt; Infinity\n *\n * _.toNumber(&#39;3&#39;);\n * // =&gt; 3\n */\nfunction toNumber(value) {\n  if (typeof value == &#39;number&#39;) {\n    return value;\n  }\n  if (isSymbol(value)) {\n    return NAN;\n  }\n  if (isObject(value)) {\n    var other = isFunction(value.valueOf) ? value.valueOf() : value;\n    value = isObject(other) ? (other + &#39;&#39;) : other;\n  }\n  if (typeof value != &#39;string&#39;) {\n    return value === 0 ? value : +value;\n  }\n  value = value.replace(reTrim, &#39;&#39;);\n  var isBinary = reIsBinary.test(value);\n  return (isBinary || reIsOctal.test(value))\n    ? freeParseInt(value.slice(2), isBinary ? 2 : 8)\n    : (reIsBadHex.test(value) ? NAN : +value);\n}\n\nmodule.exports = debounce;\n\n\n\n/** WEBPACK FOOTER **\n ** ./~/lodash.debounce/index.js\n **/&quot;,&quot;const doc = window.document;\nconst MutationObserver = window.MutationObserver || window.WebKitMutationObserver;\n\nlet listeners = [];\nlet observer;\n\nfunction ready (selector, fn) {\n  // Store the selector and callback to be monitored\n  listeners.push({\n    selector,\n    fn\n  });\n\n  if (!observer &amp;&amp; MutationObserver) {\n    // Watch for changes in the document\n    observer = new MutationObserver(check);\n    observer.observe(doc.documentElement, {\n      childList: true,\n      subtree: true,\n      removedNodes: true\n    });\n  }\n  // Check if the element is currently in the DOM\n  check();\n}\n\nfunction check() {\n  // Check the DOM for elements matching a stored selector\n  for (let i = 0, len = listeners.length, listener, elements; i &lt; len; i++) {\n    listener = listeners[i];\n    // Query for elements matching the specified selector\n    elements = doc.querySelectorAll(listener.selector);\n    for (let j = 0, jLen = elements.length, element; j &lt; jLen; j++) {\n      element = elements[j];\n      // Make sure the callback isn&#39;t invoked with the\n      // same element more than once\n      if (!element.ready) {\n        element.ready = true;\n        // Invoke the callback with the element\n        listener.fn.call(element, element);\n      }\n    }\n  }\n}\n\nexport default ready;\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/libs/observer.js\n **/&quot;,&quot;/**\n * Device detector\n */\nclass Detector {\n\n  phone() {\n    var check = false;\n    (function(a) {\n      if (/(android|bb\\d+|meego).+mobile|avantgo|bada\\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\\-(n|u)|c55\\/|capi|ccwa|cdm\\-|cell|chtm|cldc|cmd\\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\\-s|devi|dica|dmob|do(c|p)o|ds(12|\\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\\-|_)|g1 u|g560|gene|gf\\-5|g\\-mo|go(\\.w|od)|gr(ad|un)|haie|hcit|hd\\-(m|p|t)|hei\\-|hi(pt|ta)|hp( i|ip)|hs\\-c|ht(c(\\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\\-(20|go|ma)|i230|iac( |\\-|\\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\\/)|klon|kpt |kwc\\-|kyo(c|k)|le(no|xi)|lg( g|\\/(k|l|u)|50|54|\\-[a-w])|libw|lynx|m1\\-w|m3ga|m50\\/|ma(te|ui|xo)|mc(01|21|ca)|m\\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\\-2|po(ck|rt|se)|prox|psio|pt\\-g|qa\\-a|qc(07|12|21|32|60|\\-[2-7]|i\\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\\-|oo|p\\-)|sdk\\/|se(c(\\-|0|1)|47|mc|nd|ri)|sgh\\-|shar|sie(\\-|m)|sk\\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\\-|v\\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\\-|tdg\\-|tel(i|m)|tim\\-|t\\-mo|to(pl|sh)|ts(70|m\\-|m3|m5)|tx\\-9|up(\\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\\-|your|zeto|zte\\-/i.test(a.substr(0, 4))) check = true\n    })(navigator.userAgent || navigator.vendor || window.opera);\n    return check;\n  }\n\n  mobile() {\n    var check = false;\n    (function(a) {\n      if (/(android|bb\\d+|meego).+mobile|avantgo|bada\\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\\-(n|u)|c55\\/|capi|ccwa|cdm\\-|cell|chtm|cldc|cmd\\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\\-s|devi|dica|dmob|do(c|p)o|ds(12|\\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\\-|_)|g1 u|g560|gene|gf\\-5|g\\-mo|go(\\.w|od)|gr(ad|un)|haie|hcit|hd\\-(m|p|t)|hei\\-|hi(pt|ta)|hp( i|ip)|hs\\-c|ht(c(\\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\\-(20|go|ma)|i230|iac( |\\-|\\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\\/)|klon|kpt |kwc\\-|kyo(c|k)|le(no|xi)|lg( g|\\/(k|l|u)|50|54|\\-[a-w])|libw|lynx|m1\\-w|m3ga|m50\\/|ma(te|ui|xo)|mc(01|21|ca)|m\\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\\-2|po(ck|rt|se)|prox|psio|pt\\-g|qa\\-a|qc(07|12|21|32|60|\\-[2-7]|i\\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\\-|oo|p\\-)|sdk\\/|se(c(\\-|0|1)|47|mc|nd|ri)|sgh\\-|shar|sie(\\-|m)|sk\\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\\-|v\\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\\-|tdg\\-|tel(i|m)|tim\\-|t\\-mo|to(pl|sh)|ts(70|m\\-|m3|m5)|tx\\-9|up(\\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\\-|your|zeto|zte\\-/i.test(a.substr(0, 4))) check = true\n    })(navigator.userAgent || navigator.vendor || window.opera);\n    return check;\n  }\n\n  tablet() {\n    return this.mobile() &amp;&amp; !this.phone();\n  }\n};\n\nexport default new Detector;\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/helpers/detector.js\n **/&quot;,&quot;/**\n * Set or remove aos-animate class\n * @param {node} el         element\n * @param {int}  top        scrolled distance\n * @param {void} once\n */\nconst setState = function (el, top, once) {\n  const attrOnce = el.node.getAttribute(&#39;data-aos-once&#39;);\n\n  if (top &gt; el.position) {\n    el.node.classList.add(&#39;aos-animate&#39;);\n  } else if (typeof attrOnce !== &#39;undefined&#39;) {\n    if (attrOnce === &#39;false&#39; || (!once &amp;&amp; attrOnce !== &#39;true&#39;)) {\n      el.node.classList.remove(&#39;aos-animate&#39;);\n    }\n  }\n};\n\n\n/**\n * Scroll logic - add or remove &#39;aos-animate&#39; class on scroll\n *\n * @param  {array} $elements         array of elements nodes\n * @param  {bool} once               plugin option\n * @return {void}\n */\nconst handleScroll = function ($elements, once) {\n  const scrollTop = window.pageYOffset;\n  const windowHeight = window.innerHeight;\n  /**\n   * Check all registered elements positions\n   * and animate them on scroll\n   */\n  $elements.forEach((el, i) =&gt; {\n    setState(el, windowHeight + scrollTop, once);\n  });\n};\n\nexport default handleScroll;\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/helpers/handleScroll.js\n **/&quot;,&quot;/* Clearing variables */\n\nimport calculateOffset from &#39;./calculateOffset&#39;;\n\nconst prepare = function ($elements, options) {\n  $elements.forEach((el, i) =&gt; {\n    el.node.classList.add(&#39;aos-init&#39;);\n    el.position = calculateOffset(el.node, options.offset);\n  });\n  return $elements;\n};\n\nexport default prepare;\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/helpers/prepare.js\n **/&quot;,&quot;/**\n * Calculate offset\n * basing on element&#39;s settings like:\n * - anchor\n * - offset\n *\n * @param  {Node} el [Dom element]\n * @return {Integer} [Final offset that will be used to trigger animation in good position]\n */\n\nimport getOffset from &#39;./../libs/offset&#39;;\n\nconst calculateOffset = function (el, optionalOffset) {\n  let elementOffsetTop = 0;\n  let additionalOffset = 0;\n  const windowHeight = window.innerHeight;\n  const attrs = {\n    offset: el.getAttribute(&#39;data-aos-offset&#39;),\n    anchor: el.getAttribute(&#39;data-aos-anchor&#39;),\n    anchorPlacement: el.getAttribute(&#39;data-aos-anchor-placement&#39;)\n  };\n\n  if (attrs.offset &amp;&amp; !isNaN(attrs.offset)) {\n    additionalOffset = parseInt(attrs.offset);\n  }\n\n  if (attrs.anchor &amp;&amp; document.querySelectorAll(attrs.anchor)) {\n    el = document.querySelectorAll(attrs.anchor)[0];\n  }\n\n  elementOffsetTop = getOffset(el).top;\n\n  switch (attrs.anchorPlacement) {\n    case &#39;top-bottom&#39;:\n      // Default offset\n      break;\n    case &#39;center-bottom&#39;:\n      elementOffsetTop += el.offsetHeight / 2;\n      break;\n    case &#39;bottom-bottom&#39;:\n      elementOffsetTop += el.offsetHeight;\n      break;\n    case &#39;top-center&#39;:\n      elementOffsetTop += windowHeight / 2;\n      break;\n    case &#39;bottom-center&#39;:\n      elementOffsetTop += windowHeight / 2 + el.offsetHeight;\n      break;\n    case &#39;center-center&#39;:\n      elementOffsetTop += windowHeight / 2 + el.offsetHeight / 2;\n      break;\n    case &#39;top-top&#39;:\n      elementOffsetTop += windowHeight;\n      break;\n    case &#39;bottom-top&#39;:\n      elementOffsetTop += el.offsetHeight + windowHeight;\n      break;\n    case &#39;center-top&#39;:\n      elementOffsetTop += el.offsetHeight / 2 + windowHeight;\n      break;\n  }\n\n  if (!attrs.anchorPlacement &amp;&amp; !attrs.offset &amp;&amp; !isNaN(optionalOffset)) {\n    additionalOffset = optionalOffset;\n  }\n\n  return elementOffsetTop + additionalOffset;\n};\n\nexport default calculateOffset;\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/helpers/calculateOffset.js\n **/&quot;,&quot;/**\n * Get offset of DOM element Helper\n * including these with translation\n *\n * @param  {Node} el [DOM element]\n * @return {Object} [top and left offset]\n */\nconst offset = function (el) {\n  let _x = 0;\n  let _y = 0;\n\n  while (el &amp;&amp; !isNaN(el.offsetLeft) &amp;&amp; !isNaN(el.offsetTop)) {\n    _x += el.offsetLeft - (el.tagName != &#39;BODY&#39; ? el.scrollLeft : 0);\n    _y += el.offsetTop - (el.tagName != &#39;BODY&#39; ? el.scrollTop : 0);\n    el = el.offsetParent;\n  }\n\n  return {\n    top: _y,\n    left: _x\n  };\n};\n\nexport default offset;\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/libs/offset.js\n **/&quot;,&quot;/**\n * Generate initial array with elements as objects\n * This array will be extended later with elements attributes values\n * like &#39;position&#39;\n */\nconst createArrayWithElements = function (elements) {\n  elements = elements || document.querySelectorAll(&#39;[data-aos]&#39;);\n  let finalElements = [];\n\n  [].forEach.call(elements, function(el, i) {\n    finalElements.push({\n      node: el\n    });\n  });\n\n  return finalElements;\n};\n\nexport default createArrayWithElements;\n\n\n\n/** WEBPACK FOOTER **\n ** ./src/js/helpers/elements.js\n **/&quot;],&quot;sourceRoot&quot;:&quot;&quot;}</td>
+      </tr>
+</table>
+
+  <details class="details-reset details-overlay BlobToolbar position-absolute js-file-line-actions dropdown d-none" aria-hidden="true">
+    <summary class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1" aria-label="Inline file action toolbar">
+      <svg class="octicon octicon-kebab-horizontal" viewBox="0 0 13 16" version="1.1" width="13" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.5 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM13 7.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/></svg>
+    </summary>
+    <details-menu>
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-lines" style="cursor:pointer;" data-original-text="Copy lines">Copy lines</clipboard-copy></li>
+        <li><clipboard-copy role="menuitem" class="dropdown-item" id="js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</clipboard-copy></li>
+        <li><a class="dropdown-item js-update-url-with-hash" id="js-view-git-blame" role="menuitem" href="/cdnjs/cdnjs/blame/fe2e8202d740795c781da75c968b84e12c36b05d/ajax/libs/aos/2.1.1/aos.js.map">View git blame</a></li>
+          <li><a class="dropdown-item" id="js-new-issue" role="menuitem" href="/cdnjs/cdnjs/issues/new">Open new issue</a></li>
+      </ul>
+    </details-menu>
+  </details>
+
+  </div>
+
+  </div>
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+        <button type="submit" class="btn" data-close-dialog>Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </div>
+  </div>
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2018 <span title="0.20072s from unicorn-68d4c9b6fc-zwlvj">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a href="https://help.github.com/articles/github-security/" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li class="mr-3"><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://blog.github.com" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-ijzRYjCp+6DOOxAmTeF/AH7lWhtDsaTSzwzKxRoua1wqKLu6tLSFSvVmDViTab/1cRfKg5SF/Fokk2v59ui69w==" type="application/javascript" src="https://assets-cdn.github.com/assets/frameworks-72a49bb95cc8d33fdcdba9ee20cc5525.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-M/q7gW/AK2LytzjWMSPnP7hgC3STKqJyzgdGxr5Rrdf3Stx+nCWaPVIkgosLbWAcDMfsrQZOFiv9C4YvgsWmCg==" type="application/javascript" src="https://assets-cdn.github.com/assets/github-7338ec91ef75dcd3c9b8c32e95e79352.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+  </div>
+</div>
+
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
+    <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast">
+      <button class="m-3 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+<div id="hovercard-aria-description" class="sr-only">
+  Press h to open a hovercard with more details.
+</div>
+
+
+  </body>
+</html>
+

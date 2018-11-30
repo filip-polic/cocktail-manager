@@ -1,0 +1,59 @@
+{% extends 'cm_base.html.twig' %}
+
+{% block title %}Register{% endblock title %}
+
+{% block body %}
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center register-wrapper">
+            <div class="col-11 col-md-8 col-lg-5 text-center">
+                <h1 class="mb-5">Account registration</h1>
+                {% if not form.vars.valid %}
+                    <div class="row">
+                        <div class="col-12 mb-3 py-3 px-4 alert alert-danger text-left">
+                        {% if not form.vars.valid %}
+                            {% for error in form.vars.errors.form.getErrors(true) %}
+                                <li>{{ error.message }}</li>
+                            {% endfor %}
+                        {% endif %}
+                        </div>
+                    </div>
+                {% endif %}
+                <form action="{{ form.vars.action|escape }}" method="POST" class="mb-2" id="user-register-form" novalidate>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 p-0">
+                            {{ form_widget(form.email, { 'attr': { 'class': 'w-100', 'placeholder': 'Email' } }) }}
+                        </div>
+                        <div class="col-12 col-sm-6 p-0">
+                            {{ form_widget(form.username, { 'attr': { 'class': 'w-100', 'placeholder': 'Username' } }) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 p-0">
+                            {{ form_widget(form.password.first, { 'attr': { 'class': 'w-100', 'placeholder': 'Password' } }) }}
+                        </div>
+                        <div class="col-12 col-sm-6 p-0">
+                            {{ form_widget(form.password.second, { 'attr': { 'class': 'w-100', 'placeholder': 'Repeat password' } }) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 p-0">
+                            {{ form_widget(form._token) }}
+                            <button type="submit" class="btn btn-darker w-100" id="{{ form.children.submit.vars.id }}"
+                                    name="{{ form.children.submit.vars.full_name }}">
+                                Sign up
+                                <img src="{{ asset('assets/img/svg/cm_logo.svg')|escape }}"
+                                     alt="Cocktail Manager Logo" class="img-fluid ml-2" style="width: 1.25rem;">
+                            </button>
+                        </div>
+                    </div>
+                </form>
+                <div class="flex-center flex-column">
+                    <small class="text-white text-center d-block text-uppercase">
+                        Already signed up?
+                        <a class="text-darker" style="text-decoration: underline;" href="{{ path('cm_login')|escape }}">Sign in</a> then.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

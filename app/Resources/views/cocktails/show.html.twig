@@ -1,0 +1,73 @@
+{% extends 'cm_base.html.twig' %}
+
+{% block title %}Show cocktail{% endblock title %}
+
+{% block stylesheets %}
+    <style>body { background: url("{{ asset('assets/img/svg/background_show.svg')|escape }}"); }</style>
+{% endblock stylesheets %}
+
+{% block body %}
+    {% include 'components/navbar.html.twig' %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h2 class="text-darker">Cocktail details</h2>
+                    <div>
+                        {% if is_granted('ROLE_USER') and app.user.id is same as(cocktail.user.id) %}
+                            <a href="{{ path('cocktail_edit', { 'id': cocktail.id })|escape }}" class="btn btn-warning rounded-0">
+                                Edit
+                            </a>
+                        {% endif %}
+                        <a href="{{ path('cocktails_index')|escape }}" class="btn btn-darker rounded-0">Return to list</a>
+                    </div>
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_name">Name:</label>
+                    <div class="p-4 form-control rounded-0 disabled" id="cocktail_name">
+                        {% autoescape false %}
+                            {{ cocktail.name }}
+                        {% endautoescape %}
+                    </div>
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_description">Description:</label>
+                    <div class="p-4 form-control rounded-0 disabled" id="cocktail_description">
+                        {{ cocktail.description|unescape }}
+                    </div>
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_preparation">Preparation:</label>
+                    <div class="p-4 form-control rounded-0 disabled" id="cocktail_preparation">
+                        {{ cocktail.preparation|unescape }}
+                    </div>
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_difficulty">Difficulty:</label>
+                    <div class="p-4 form-control rounded-0 disabled" id="cocktail_difficulty">
+                        {{ cocktail.difficulty|escape }}
+                    </div>
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="cocktail_ingredients">This cocktail contains the following ingredients:</label>
+                    <div class="p-4 form-control rounded-0 disabled" id="cocktail_ingredients">
+                        {% set counter = 1 %}
+                        {% for ingredient in cocktail.ingredients %}
+                            <a href="{{ path('ingredient_show', { 'id': ingredient.id })|escape }}">{{ ingredient.name|escape }}</a>
+                            <span id="comma-{{ counter }}">,&nbsp;</span>
+                            {% set counter = counter + 1 %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock body %}
+{% block javascripts %}
+    <script type="text/javascript" nonce="{{ csp_nonce() }}">
+        document.addEventListener('DOMContentLoaded', function() {
+            let commas = $('span[id^="comma-"]');
+            commas[commas.length - 1].remove();
+        });
+    </script>
+{% endblock javascripts %}

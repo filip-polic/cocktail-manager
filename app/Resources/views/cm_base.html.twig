@@ -1,0 +1,33 @@
+{% autoescape %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{% block title %}{% endblock title %} - Cocktail Manager</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="A simple web application for managing cocktail recipes.">
+    <meta name="keywords" content="Cocktail, Cocktail Manager, Cocktails, Ingredients, Cocktail ingredients, cocktail search, search cocktail by
+    ingredients, Ingredient manager, ingredient search, cocktail builder, create a cocktail, find a cocktail">
+    <meta name="author" content="Filip Polić">
+    <link href="{{ asset('assets/img/content/cm_favicon.ico') }}" rel="icon" />
+    <link href="{{ asset('assets/css/bootstrap.min.css')|escape }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/aos.css')|escape }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/cm_style.css')|escape }}" rel="stylesheet" />
+    {% block stylesheets %}
+    {% endblock stylesheets %}
+</head>
+<body>
+    {% block body %}
+    {% endblock body %}
+    <script type="text/javascript" nonce="{{ csp_nonce() }}" src="{{ asset('assets/js/jquery-2.2.1.min.js')|escape }}"></script>
+    <script type="text/javascript" nonce="{{ csp_nonce() }}" src="{{ asset('assets/js/bootstrap.bundle.min.js')|escape }}"></script>
+    <script type="text/javascript" nonce="{{ csp_nonce() }}" src="{{ asset('assets/js/aos.js')|escape }}"></script>
+    <script type="text/javascript" nonce="{{ csp_nonce() }}" src="{{ asset('assets/js/cm_scripts.js')|escape }}"></script>
+    <script type="text/javascript" nonce="{{ csp_nonce() }}">AOS.init();</script>
+    {% block javascripts %}
+    {% endblock javascripts %}
+</body>
+</html>
+{% endautoescape %}

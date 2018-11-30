@@ -1,0 +1,111 @@
+{% extends 'cm_base.html.twig' %}
+
+{% block title %}All cocktails{% endblock title %}
+
+{% block body %}
+    {% include 'components/navbar.html.twig' %}
+    {% for message in app.flashes('success') %}
+        <div class="fixed-top w-100 alert-success alert-popup text-center p-3 bsh-light flex-center"
+             style="font-size:1.25rem;">
+            <span>{{ message|escape }}</span>
+        </div>
+        <script type="text/javascript" nonce="{{ csp_nonce() }}">
+            setTimeout(function () {
+                $('.alert-success').css('transform', 'translateY(-200px)');
+            }, 3500);
+        </script>
+    {% endfor %}
+    {% for message in app.flashes('error') %}
+        <div class="fixed-top w-100 alert-danger alert-popup text-center p-3 bsh-light flex-center"
+             style="font-size:1.25rem;">
+            <span>{{ message|escape }}</span>
+        </div>
+        <script type="text/javascript" nonce="{{ csp_nonce() }}">
+            setTimeout(function () {
+                $('.alert-danger').css('transform', 'translateY(-200px)');
+            }, 3500);
+        </script>
+    {% endfor %}
+    {% if cocktails|length > 0 %}
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 py-5">
+                    <h2 class="mb-5">List of all cocktails</h2>
+                    <div class="row">
+                        {% for cocktail in cocktails %}
+                            <div class="col-12 col-lg-6">
+                                <ul class="list-group">
+                                    <li class="d-flex justify-content-between list-group-item rounded-0 text-darker">
+                                        {% autoescape false %}
+                                            <span class="mb-2 mb-sm-0 mr-lg-2">{{ cocktail.name }}</span>
+                                        {% endautoescape %}
+                                        <div class="d-flex">
+                                            <a href="{{ path('cocktail_show', { 'id': cocktail.id }) }}"
+                                               class="btn btn-sm btn-darker flex-center rounded-0"
+                                               style="height: 30.96px;">
+                                                <img src="{{ asset('assets/img/content/magnifier.png')|escape }}" alt="Magnifying glass"
+                                                     class="img-fluid" style="width: .75rem; margin-right: .35rem;">
+                                                Show
+                                            </a>
+                                            {% if is_granted('ROLE_ADMIN') or
+                                                (cocktail.user is not same as(null) and
+                                                (is_granted('ROLE_USER') and app.user.id is same as(cocktail.user.id))) %}
+                                                <a href="{{ path('cocktail_edit', { 'id': cocktail.id })|escape }}"
+                                                   class="btn btn-sm btn-warning rounded-0 flex-center mx-1"
+                                                   style="height: 30.96px;">
+                                                    Edit
+                                                </a>
+                                                <form method="POST"
+                                                      id="cocktail-delete-form-{{ cocktail.id|escape }}"
+                                                      action="{{ path('cocktail_delete', { 'id': cocktail.id|escape }) }}">
+                                                    <input type="hidden" name="_method" value="DELETE">
+                                                    <input type="hidden" name="_cocktail_delete_token_{{ cocktail.id|escape }}"
+                                                           value="{{ csrf_token('_cocktail_delete_token_' ~ cocktail.id|escape) }}">
+                                                    <button type="submit" id="cocktail_delete_form_submit_{{ cocktail.id|escape }}"
+                                                            class="btn btn-sm btn-danger flex-center"
+                                                            style="height: 30.96px;">Delete</button>
+                                                </form>
+                                            {% endif %}
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        <div class="alert alert-danger">
+            {{ 'There are no cocktails stored in the database.' }}
+        </div>
+    {% endif %}
+{% endblock body %}
+{% block javascripts %}
+    {% if is_granted('ROLE_ADMIN') %}
+        <script type="text/javascript" nonce="{{ csp_nonce() }}">
+            $(function() {
+                $('button[id^="cocktail_delete_form_submit_"]').on('click', function(e) {
+                    e.preventDefault();
+
+                    const _this_id = $(this).attr('id');
+                    const cocktail_id = parseInt(_this_id.substr(_this_id.lastIndexOf('_') + 1, _this_id.length), 10);
+
+                    if (typeof cocktail_id !== 'number') {
+                        $('body').append('<div class="fixed-top w-100 alert-danger alert-popup text-center p-3 bsh-light flex-center"\n' +
+                            '                 style="font-size:1.25rem;">\n' +
+                            '                <span>There was an error while detecting the cocktail identifier. ' +
+                            'Please refresh the page and try again.</span>\n' +
+                            '            </div>');
+                        return;
+                    }
+
+                    let decision = confirm('Are you sure you want to delete this cocktail?');
+                    if (decision) {
+                        $('#cocktail-delete-form-' + cocktail_id).submit();
+                    }
+                });
+            });
+        </script>
+    {% endif %}
+{% endblock javascripts %}

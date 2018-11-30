@@ -33,3 +33,16 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+    AppBundle\EventListener\LoginListener:
+        tags:
+            - { name: 'kernel.event_listener', event: 'security.interactive_login' }
+        arguments: ['@Doctrine\ORM\EntityManagerInterface']
+
+    app.response_subscriber:
+        class: AppBundle\Subscriber\ResponseSubscriber
+        autowire: true
+
+    app.xss_protector:
+        class: AppBundle\EventListener\XSSProtector
+        autowire: true

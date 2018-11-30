@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ asset('assets/css/cm_style.css')|escape }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css')|escape }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/animate.css')|escape }}">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900|
+        Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <title>{{ 'Error'|escape }}</title>
+    <link rel="icon" href="{{ asset('assets/img/content/ghost.ico')|escape }}" />
+    <style>
+        body {
+            background: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row align-items-center" style="min-height: 95vh;">
+        <div class="col-sm-12 col-md-12 text-center error">
+            <img src="{{ asset('assets/img/svg/ghost.svg')|escape }}" alt="Duhic" style="width: 300px !important;" class="mb-5 animated bounce infinite">
+            <h2 class="margin-center">
+            {% if msg is defined %}
+                    <strong>{{ 'Error'|upper }}</strong><br>{{ msg|escape }}
+            {% else %}
+                    <strong>{{ 'Error'|upper }}</strong><br><h2 class="font-weight-light">
+                    {{ 'There was an error transferring data. Please refresh the page and try again.'|escape }}
+            </h2>
+            {% endif %}
+            </h2>
+            <a href="{% if route is defined %}{{ path(route)|escape }} {% else %}{{ path('cm_dashboard') }}{% endif %}" class="btn btn-warning rounded-0 pl-3 pr-3 mt-4">
+                {% if route_description is defined %}
+                    {{ route_description|trans }}
+                {% else %}
+                    {{ 'Return to dashboard'|escape }}
+                {% endif %}
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
