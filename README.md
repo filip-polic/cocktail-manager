@@ -7,4 +7,4 @@ Anyone on the site is able to view existing cocktails and ingredients.
 <br>
 Only registered users are able to add new, edit and delete existing cocktails.
 
-![Cocktail Manager logo](https://github.com/filip-polic/cocktail-manager/blob/master/web/assets/img/content/cm_logo.png "Cocktail manager logo")
+<img src="https://filippolic.from.hr/assets/img/content/cocktail-manager.png" style="width:50%;margin:0 auto;"/>
