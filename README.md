@@ -5,6 +5,7 @@ COCKTAIL<b>MANAGER</b> is a simple Symfony 3.4 application for managing cocktail
 <br>
 - Anyone on the site is able to view existing cocktails and ingredients. 
 - Only registered users are able to add new, edit and delete existing cocktails.
+- API features are enabled via `/api` route prefix (check `/src/AppBundle/Controller/Api` folder for API Controllers)
 
 To install the application, follow these steps:
 - Clone the repository with `git clone https://github.com/filip-polic/cocktail-manager.git`
