@@ -10,6 +10,7 @@ use JMS\Serializer\SerializationContext;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\FormError;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -97,9 +98,13 @@ class CocktailsController extends Controller
         }
 
         $cocktail = new Cocktail();
-        $form = $this->createForm(CocktailType::class, $cocktail);
+        $form = $this->createForm(CocktailType::class, $cocktail,[
+            'method' => 'POST'
+        ]);
         $form->handleRequest($request);
-        $allIngredients = $this->getDoctrine()->getRepository(Ingredient::class)->findBy([], [ 'name' => 'ASC' ]);
+        $allIngredients = $this->getDoctrine()->getRepository(Ingredient::class)->findBy([], [
+            'name' => 'ASC'
+        ]);
 
         $context = SerializationContext::create()
             ->enableMaxDepthChecks()->setGroups([
@@ -112,15 +117,11 @@ class CocktailsController extends Controller
         if ($request->isMethod('POST')) {
             if ($form->isSubmitted() and $form->isValid()) {
 
-                $cocktailName = filter_var($form['name']->getData(), FILTER_SANITIZE_SPECIAL_CHARS);
-                $description = filter_var($form['description']->getData(), FILTER_SANITIZE_SPECIAL_CHARS);
-                $preparation = filter_var($form['preparation']->getData(), FILTER_SANITIZE_SPECIAL_CHARS);
+                $cocktailName = $form['name']->getData();
+                $description = $form['description']->getData();
+                $preparation = $form['preparation']->getData();
 
-                if (!$cocktailName or !$description or !$preparation) {
-                    $form->addError(new FormError('Some of the parameters are not valid.'));
-                }
-
-                $difficulty = filter_var($form['difficulty']->getData(), FILTER_SANITIZE_SPECIAL_CHARS);
+                $difficulty = $form['difficulty']->getData();
                 if (!in_array(strtolower($difficulty), [ 'easy', 'medium', 'hard' ])) {
                     $form->get('difficulty')->addError(new FormError('Difficulty format is not valid.'));
                 }
@@ -137,10 +138,8 @@ class CocktailsController extends Controller
 
                 if (isset($request->request->get('cocktail')['new_ingredients'])) {
                     foreach ($request->request->get('cocktail')['new_ingredients'] as $new_ingredient) {
-                        $name = filter_var($new_ingredient, FILTER_SANITIZE_SPECIAL_CHARS);
-
                         $ingredient = new Ingredient();
-                        $ingredient->setName($name);
+                        $ingredient->setName($new_ingredient);
                         $this->getDoctrine()->getManager()->persist($ingredient);
                         $cocktail->addIngredient($ingredient);
                     }
@@ -169,11 +168,12 @@ class CocktailsController extends Controller
     }
 
     /**
-     * @Route("/cocktail/{id}/edit", name="cocktail_edit", methods={"GET", "PUT"}, requirements={"id"="\d+"})
+     * @Route("/cocktail/{id}/edit", name="cocktail_edit", methods={"GET", "PUT", "POST"}, requirements={"id"="\d+"})
+     * @param Request $request
      * @param $id
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return \Symfony\Component\HttpFoundation\Response|JsonResponse
      */
-    public function editAction($id) {
+    public function editAction(Request $request, $id) {
         if (!$this->checker->isGranted('IS_AUTHENTICATED_FULLY')) {
             return $this->redirectToRoute('cm_login');
         }
@@ -188,7 +188,16 @@ class CocktailsController extends Controller
 
         $cocktail = $this->getDoctrine()->getRepository(Cocktail::class)->find($id);
 
-        if ($this->getUser()->getId() !== $cocktail->getUser()->getId() or !$this->checker->isGranted('ROLE_ADMIN')) {
+        if (!$cocktail instanceof Cocktail) {
+            return $this->render('@Twig/Exception/error.html.twig', [
+                'msg' => 'There was an error while transferring data.',
+                'route' => 'cm_dashboard',
+                'route_description' => 'Return to dashboard'
+            ]);
+        }
+
+        if (!$this->checker->isGranted('ROLE_ADMIN') and
+            null == $cocktail->getUser()) {
             return $this->render('@Twig/Exception/error.html.twig', [
                 'msg' => 'You don\'t have the permission to do that, mister!',
                 'route' => 'cm_dashboard',
@@ -196,11 +205,73 @@ class CocktailsController extends Controller
             ]);
         }
 
-        $form = $this->createForm(CocktailType::class, $cocktail);
+        $form = $this->createForm(CocktailType::class, $cocktail, [
+            'method' => 'PUT'
+        ]);
+        $form->handleRequest($request);
+        $allIngredients = $this->getDoctrine()->getRepository(Ingredient::class)->findBy([], [
+            'name' => 'ASC'
+        ]);
+        $context = SerializationContext::create()
+            ->enableMaxDepthChecks()->setGroups([
+                'Default'
+            ])
+        ;
+        $serialized = $this->get('jms_serializer')->serialize($allIngredients, 'json', $context);
+
+
+        if ($form->isSubmitted() and $form->isValid()) {
+            $cocktailName = $form['name']->getData();
+            $description = $form['description']->getData();
+            $preparation = $form['preparation']->getData();
+
+            $difficulty = $form['difficulty']->getData();
+            if (!in_array(strtolower($difficulty), [ 'easy', 'medium', 'hard' ])) {
+                $form->get('difficulty')->addError(new FormError('Difficulty format is not valid.'));
+            }
+
+            $cocktail->getIngredients()->clear();
+
+            if (isset($request->request->get('cocktail')['ingredients'])) {
+                foreach ($request->request->get('cocktail')['ingredients'] as $id) {
+                    foreach ($allIngredients as $ingredient) {
+                        if ($id == $ingredient->getId()) {
+                            $cocktail->addIngredient($ingredient);
+                        }
+                    }
+                }
+            }
+
+            if (isset($request->request->get('cocktail')['new_ingredients'])) {
+                foreach ($request->request->get('cocktail')['new_ingredients'] as $new_ingredient) {
+                    $ingredient = new Ingredient();
+                    $ingredient->setName($new_ingredient);
+                    $this->getDoctrine()->getManager()->persist($ingredient);
+                    $cocktail->addIngredient($ingredient);
+                }
+            }
+
+            $cocktail
+                ->setName($cocktailName)
+                ->setDescription($description)
+                ->setPreparation($preparation)
+                ->setDifficulty($difficulty)
+                ->setUser($this->getUser());
+
+            $this->getDoctrine()->getManager()->persist($cocktail);
+
+            $this->getDoctrine()->getManager()->flush();
+            $this->addFlash('success', 'You have successfully updated a cocktail.');
+
+            return $this->redirectToRoute('cocktail_show', [
+                'id' => $cocktail->getId()
+            ]);
+        }
 
         return $this->render('cocktails/edit.html.twig', [
             'cocktail' => $cocktail,
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'ingredients' => $serialized
         ]);
     }
 

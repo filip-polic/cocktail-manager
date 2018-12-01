@@ -15,39 +15,93 @@
                     <h2 class="text-darker">Edit cocktail</h2>
                     <a href="{{ path('cocktails_index')|escape }}" class="btn btn-darker rounded-0">Return to list</a>
                 </div>
+                {% if not form.vars.valid %}
+                    <div class="col-12 mb-3 py-3 px-4 alert alert-danger text-left">
+                        {% for error in form.vars.errors.form.getErrors(true) %}
+                            <li>{{ error.message }}</li>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% for message in app.flashes('error') %}
+                    <div class="col-12 mb-3 py-3 px-4 alert alert-danger text-left">
+                        <li>{{ message|escape }}</li>
+                    </div>
+                {% endfor %}
                 {{ form_start(form) }}
                 <div class="col-12 p-0 mb-3">
                     <label class="mb-1 text-darker" for="{{ form.children.name.vars.id|escape }}">Name:</label>
-                    {{ form_widget(form.name, { 'attr': { 'value': form.vars.value.name|unescape } }) }}
+                    {{ form_widget(form.name, { 'attr': { 'value': form.vars.value.name,
+                        'autofocus': 'true' } }) }}
                 </div>
                 <div class="col-12 p-0 mb-3">
                     <label class="mb-1 text-darker" for="cocktail_description">Description:</label>
                     {{ form_widget(form.description, { 'attr': {
-                        'value': form.vars.value.description|unescape,
+                        'value': form.vars.value.description,
                         'style': 'min-height: 190px; resize: none;'
                     } }) }}
                 </div>
                 <div class="col-12 p-0 mb-3">
                     <label class="mb-1 text-darker" for="cocktail_preparation">Preparation:</label>
                     {{ form_widget(form.preparation, { 'attr': {
-                        'value': form.vars.value.preparation|unescape,
+                        'value': form.vars.value.preparation,
                         'style': 'min-height: 190px; resize: none;'
                     } }) }}
                 </div>
                 <div class="col-12 p-0 mb-3">
                     <label class="mb-1 text-darker" for="cocktail_difficulty">Difficulty:</label>
-                    {{ form_widget(form.difficulty, { 'attr': { 'value': form.vars.value.difficulty|unescape } }) }}
+                    {{ form_widget(form.difficulty, { 'attr': { 'value': form.vars.value.difficulty } }) }}
                 </div>
-                <div class="col-12 p-0 mb-3">
-                    <label class="mb-1 text-darker" for="cocktail_ingredients">This cocktail contains the following ingredients:</label>
-                    <div class="p-4 form-control rounded-0 disabled" id="cocktail_ingredients">
-                        {% set counter = 1 %}
+                <div class="col-12 p-0 my-3">
+                    <label class="mb-1 text-darker" for="cocktail_existing_ingredients">
+                        This cocktail contains the following ingredients:
+                    </label>
+                    <div class="p-3 form-control rounded-0 disabled" id="cocktail_existing_ingredients">
                         {% for ingredient in cocktail.ingredients %}
-                            <a href="{{ path('ingredient_show', { 'id': ingredient.id })|escape }}">{{ ingredient.name }}</a><span id="comma-{{ counter }}">,&nbsp;</span>
-                            {% set counter = counter + 1 %}
+                            <button type="button"
+                                    style="font-size: .95rem;"
+                                    class="font-weight-normal badge badge-warning border-0 m-1 p-2 ingredient"
+                                    value="{{ ingredient.id }}">
+                                {{ ingredient.name }}<span aria-hidden="true" class="ml-2">×</span>
+                            </button>
+                            <input id="badge-{{ ingredient.id }}" type="hidden" name="cocktail[ingredients][]" value="{{ ingredient.id }}">
+                            <script type="text/javascript" nonce="{{ csp_nonce() }}">
+                                document.addEventListener('DOMContentLoaded', function () {
+                                    $('option[value="{{ ingredient.id }}"]').remove();
+                                });
+                            </script>
                         {% endfor %}
                     </div>
                 </div>
+                <div class="col-12 p-0 mb-3">
+                    <label for="{{ form.children.ingredients.vars.id|escape }}"
+                           class="text-darker">Select the cocktail ingredients:</label>
+                    <br>
+                    {{ form_widget(form.ingredients, { 'attr': { 'style': 'min-height: 12rem !important;' } }) }}
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <div class="form-control rounded-0">
+                        <div class="align-items-center d-flex flex-wrap justify-content-start" id="badges">
+                            <span style="font-size: 85% !important;" class="text-muted disabled">Selected ingredients: </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <label class="mb-1 text-darker" for="{{ form.children.new_ingredients.vars.id|escape }}">
+                        Or add new ingredients (separate each ingredient by comma):
+                    </label>
+                    <br>
+                    <input type="text" id="{{ form.children.new_ingredients.vars.id|escape }}"
+                           class="rounded-0 py-1 px-2">
+                </div>
+                <div class="col-12 p-0 mb-3">
+                    <div class="form-control rounded-0">
+                        <div class="align-items-center d-flex flex-wrap justify-content-start" id="ni_badges">
+                            <span style="font-size: 85% !important;" class="text-muted disabled">New ingredients: </span>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="_route" value="{{ app.request.attributes.get('_route')|escape }}">
+                {{ form_widget(form._token) }}
                 <div class="col-12 p-0">
                     {{ form_widget(form.submit, { 'attr': { 'style': 'width: 100% !important;' } }) }}
                 </div>
@@ -55,3 +109,110 @@
         </div>
     </div>
 {% endblock body %}
+{% block javascripts %}
+    <script type="text/javascript" nonce="{{ csp_nonce() }}">
+        $(function () {
+            const _badges = $('#badges');
+            let all_ingredients = {{ ingredients|raw }};
+
+            $('.ingredient').on('click', function (e) {
+                e.preventDefault();
+                $(this).remove();
+                const ingredient_id = $(this).val(),
+                    ingredient_name = $(this).text().trim().substr(0, $(this).text().trim().length - 1);
+                const option = '<option value="' + ingredient_id + '">' + ingredient_name + '</option>';
+                $('#badge-' + ingredient_id).remove();
+
+                $('#cocktail_ingredients option').each(function() {
+                    let existing = $(this).text().toLowerCase();
+                    if (existing > ingredient_name.toLowerCase()) {
+                        $(this).before(option);
+                        return false;
+                    }
+                });
+            });
+
+            $('#cocktail_ingredients').on('change', function(e) {
+                e.preventDefault();
+                const selected = $(this).find(':selected');
+                const ingredient_id = selected.val(), ingredient_name = selected.text().trim();
+                const badge = '<button type="button" style="font-size: .95rem;" ' +
+                    'class="font-weight-normal badge badge-warning border-0 m-1" ' +
+                    'value="' + ingredient_id + '">' + ingredient_name + '<span aria-hidden="true" class="ml-2">×</span>' +
+                    '</button>';
+
+                _badges.append(badge);
+                _badges.append('<input id="badge-' + ingredient_id + '" type="hidden" name="cocktail[ingredients][]" value="' + ingredient_id + '">');
+
+                selected.remove();
+            });
+
+            _badges.on('click', '.badge', function() {
+                $(this).remove();
+                const ingredient_id = $(this).val(),
+                    ingredient_name = $(this).text().trim().substr(0, $(this).text().trim().length - 1);
+                $('#badge-' + ingredient_id).remove();
+                const option = '<option value="' + ingredient_id + '">' + ingredient_name + '</option>';
+
+                $('#cocktail_ingredients option').each(function() {
+                    let existing = $(this).text().toLowerCase();
+                    if (existing > ingredient_name.toLowerCase()) {
+                        $(this).before(option);
+                        return false;
+                    }
+                });
+            });
+
+            $('#cocktail_new_ingredients').on('keyup', function(e) {
+                const _this = $(this);
+                let content = $(this).val();
+                if (e.keyCode === 188) {
+                    const value = content.substr(0, content.length - 1);
+                    const new_ingredient = '<input type="hidden" name="cocktail[new_ingredients][]" value="' + value + '">';
+
+                    if (-1 !== all_ingredients.indexOf(value.toLowerCase())) {
+                        $(this).val(value);
+                        $('body').append('<div class="fixed-top w-100 alert-danger alert-popup text-center p-3 bsh-light flex-center">' +
+                            '<span>Ingredient already added.</span></div>');
+                        setTimeout(function () {
+                            $('.alert-danger').css('transform', 'translateY(-200px)');
+                        }, 3500);
+                        return;
+                    }
+
+                    let already_exists = false;
+
+                    all_ingredients.forEach((ingredient) => {
+                        if (value.toLowerCase() === ingredient.name.toLowerCase()) {
+                            _this.val(value);
+                            $('body').append('<div class="fixed-top w-100 alert-danger alert-popup text-center p-3 bsh-light flex-center">' +
+                                '<span>Ingredient already exists.</span></div>');
+                            setTimeout(function () {
+                                $('.alert-danger').css('transform', 'translateY(-200px)');
+                            }, 3500);
+                            already_exists = true;
+                        }
+                    });
+                    if (already_exists) {
+                        return;
+                    }
+
+                    all_ingredients.push(value.toLowerCase());
+                    $(this).parent().append(new_ingredient);
+                    let badge = '<button type="button" style="font-size: .95rem;" ' +
+                        'class="font-weight-normal badge badge-warning border-0 m-1">'
+                        + value +'<span aria-hidden="true" class="ml-2">×</span></button>';
+                    $('#ni_badges').append(badge);
+                    $(this).val('');
+                }
+            });
+
+            $('#ni_badges').on('click', '.badge', function() {
+                const ingredient_name = $(this).text().trim().substr(0, $(this).text().length - 1);
+                all_ingredients.splice(all_ingredients.indexOf(ingredient_name), 1);
+                $(this).remove();
+                $('input[value="' + ingredient_name + '"]').remove();
+            });
+        });
+    </script>
+{% endblock javascripts %}

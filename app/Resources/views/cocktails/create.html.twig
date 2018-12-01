@@ -96,7 +96,8 @@
                 const ingredient_id = selected.val(), ingredient_name = selected.text().trim();
                 const badge = '<button type="button" style="font-size: .95rem;" ' +
                    'class="font-weight-normal badge badge-warning border-0 m-1" ' +
-                   'value="' + ingredient_id + '">' + ingredient_name + '<span aria-hidden="true" class="ml-2">×</span></button>';
+                   'value="' + ingredient_id + '">' + ingredient_name + '<span aria-hidden="true" class="ml-2">×</span>' +
+                    '</button>';
 
                 _badges.append(badge);
                 _badges.append('<input id="badge-' + ingredient_id + '" type="hidden" name="cocktail[ingredients][]" value="' + ingredient_id + '">');
@@ -107,7 +108,7 @@
            _badges.on('click', '.badge', function() {
                 $(this).remove();
                 const ingredient_id = $(this).val(),
-                    ingredient_name = $(this).text().trim().substr(0, $(this).text().length - 1);
+                    ingredient_name = $(this).text().trim().substr(0, $(this).text().trim().length - 1);
                 $('#badge-' + ingredient_id).remove();
                 const option = '<option value="' + ingredient_id + '">' + ingredient_name + '</option>';
 
@@ -138,22 +139,21 @@
                     }
 
                     let already_exists = false;
-                    //
-                    // all_ingredients.forEach((ingredient) => {
-                    //     if (value.toLowerCase() === ingredient.name.toLowerCase()) {
-                    //         _this.val(value);
-                    //         $('body').append('<div class="fixed-top w-100 alert-danger alert-popup text-center p-3 bsh-light flex-center">' +
-                    //             '<span>Ingredient already exists.</span></div>');
-                    //         setTimeout(function () {
-                    //             $('.alert-danger').css('transform', 'translateY(-200px)');
-                    //         }, 3500);
-                    //         already_exists = true;
-                    //     }
-                    // });
-                    //
-                    // if (already_exists) {
-                    //     return;
-                    // }
+
+                    all_ingredients.forEach((ingredient) => {
+                        if (value.toLowerCase() === ingredient.name.toLowerCase()) {
+                            _this.val(value);
+                            $('body').append('<div class="fixed-top w-100 alert-danger alert-popup text-center p-3 bsh-light flex-center">' +
+                                '<span>Ingredient already exists.</span></div>');
+                            setTimeout(function () {
+                                $('.alert-danger').css('transform', 'translateY(-200px)');
+                            }, 3500);
+                            already_exists = true;
+                        }
+                    });
+                    if (already_exists) {
+                        return;
+                    }
 
                     all_ingredients.push(value.toLowerCase());
                     $(this).parent().append(new_ingredient);

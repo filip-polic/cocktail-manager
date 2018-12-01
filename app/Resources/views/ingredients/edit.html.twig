@@ -1,1 +1,26 @@
-INGREDIENT EDIT
+{% extends 'cm_base.html.twig' %}
+
+{% block title %}Edit ingredient{% endblock title %}
+
+{% block stylesheets %}
+    <style>body { background: url("{{ asset('assets/img/svg/background_edit.svg')|escape }}"); }</style>
+{% endblock stylesheets %}
+
+{% block body %}
+    {% include 'components/navbar.html.twig' %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h2 class="text-darker">Edit ingredient</h2>
+                    <a href="{{ path('ingredients_index')|escape }}" class="btn btn-darker rounded-0">Return to list</a>
+                </div>
+                {{ form_start(form) }}
+                {{ form_widget(form.name, { 'attr': { 'value': form.vars.value.name,
+                    'autofocus': 'true' } }) }}
+                {{ form_widget(form._token) }}
+                <button type="submit" class="btn btn-darker w-100 rounded-0 mt-3 py-2">Submit</button>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

@@ -42,11 +42,7 @@ class AuthenticationController extends Controller
                 $form->get('email')->addError(new FormError('Email format is not valid.'));
             }
 
-            $username = filter_var($form['username']->getData(), FILTER_SANITIZE_SPECIAL_CHARS);
-            if (!$username) {
-                $form->get('username')->addError(new FormError('Username field did not pass the validation.'));
-            }
-
+            $username = $form['username']->getData();
             $password = $encoder->encodePassword($user, $form['password']->getData());
 
             $user

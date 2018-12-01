@@ -9,7 +9,15 @@
             <div class="col-12 col-md-8 py-5">
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <h2>Ingredient details</h2>
-                    <a href="{{ path('ingredients_index')|escape }}" class="btn btn-darker rounded-0">Return to list</a>
+                    <div>
+                        {% if is_granted('ROLE_ADMIN') %}
+                            <a href="{{ path('ingredient_edit', { 'id': ingredient.id })|escape }}"
+                               class="btn btn-warning rounded-0">
+                                Edit
+                            </a>
+                        {% endif %}
+                        <a href="{{ path('ingredients_index')|escape }}" class="btn btn-darker rounded-0">Return to list</a>
+                    </div>
                 </div>
                 <div class="col-12 p-0 mb-3">
                     <label class="mb-1" for="ingredient_name">Name:</label>

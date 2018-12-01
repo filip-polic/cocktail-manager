@@ -2,8 +2,12 @@
 
 namespace AppBundle\Controller;
 
+use AppBundle\Entity\Cocktail;
 use AppBundle\Entity\Ingredient;
+use AppBundle\Form\IngredientType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
@@ -68,11 +72,12 @@ class IngredientsController extends Controller
 
     /**
      * @Route("/ingredient/{id}/edit", name="ingredient_edit", methods={"GET", "PUT"}, requirements={"id"="\d+"})
+     * @param Request $request
      * @param $id
      *
      * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
      */
-    public function editAction($id)
+    public function editAction(Request $request, $id)
     {
         if (!$this->checker->isGranted('IS_AUTHENTICATED_FULLY')) {
             return $this->redirectToRoute('cm_login');
@@ -85,6 +90,40 @@ class IngredientsController extends Controller
                 'route_description' => 'Return to dashboard'
             ]);
         }
+
+        $ingredient = $this->getDoctrine()->getRepository(Ingredient::class)
+            ->find($id);
+
+        if (!$ingredient instanceof Ingredient) {
+            return $this->render('@Twig/Exception/error.html.twig', [
+                'msg' => 'There was an error while transferring data. Refresh the page and try again.',
+                'route' => 'cm_dashboard',
+                'route_description' => 'Return to dashboard'
+            ]);
+        }
+
+        $form = $this->createForm(IngredientType::class, $ingredient, [
+            'method' => 'PUT'
+        ]);
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted() and $form->isValid()) {
+            $name = $form['name']->getData();
+            $ingredient->setName($name);
+            $this->getDoctrine()->getManager()->persist($ingredient);
+            $this->getDoctrine()->getManager()->flush();
+
+            $this->addFlash('success', 'You have successfully updated an ingredient.');
+
+            return $this->redirectToRoute('ingredient_show', [
+                'id' => $ingredient->getId()
+            ]);
+        }
+
+        return $this->render('ingredients/edit.html.twig', [
+            'form' => $form->createView(),
+            'ingredient' => $ingredient
+        ]);
     }
 
     /**

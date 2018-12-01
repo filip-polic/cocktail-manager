@@ -8,13 +8,24 @@
 
 {% block body %}
     {% include 'components/navbar.html.twig' %}
+    {% for message in app.flashes('success') %}
+        <div class="fixed-top w-100 alert-success alert-popup text-center p-3 bsh-light flex-center"
+             style="font-size:1.25rem;">
+            <span>{{ message|escape }}</span>
+        </div>
+        <script type="text/javascript" nonce="{{ csp_nonce() }}">
+            setTimeout(function () {
+                $('.alert-success').css('transform', 'translateY(-200px)');
+            }, 3500);
+        </script>
+    {% endfor %}
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 py-5">
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <h2 class="text-darker">Cocktail details</h2>
                     <div>
-                        {% if is_granted('ROLE_USER') and app.user.id is same as(cocktail.user.id) %}
+                        {% if is_granted('ROLE_ADMIN') or is_granted('ROLE_USER') and app.user.id is same as(cocktail.user.id) %}
                             <a href="{{ path('cocktail_edit', { 'id': cocktail.id })|escape }}" class="btn btn-warning rounded-0">
                                 Edit
                             </a>
